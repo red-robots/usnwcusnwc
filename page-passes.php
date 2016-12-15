@@ -5,12 +5,8 @@
 get_header('page'); ?>
 
 
-<div class="category-banners">
-    <?php if (is_page('activity-passes')) { ?>
-    <?php if ( function_exists( 'soliloquy_slider' ) ) soliloquy_slider( '826' ); ?>
-  <?php } ?>
 
-</div>
+ <?php get_sidebar("banner");?>
 
 
 <!-- removes the faetured image if custom field is set -->

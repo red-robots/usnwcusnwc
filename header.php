@@ -38,6 +38,7 @@
 <link rel="stylesheet" href="http://usnwc.org/wp-content/themes/usnwc/css/addtohomescreen.css">
 <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <script src="<?php echo get_template_directory_uri(); ?>/js/addtohomescreen.min.js?"></script>
+<script src="https://use.fontawesome.com/4945cee666.js"></script>
 <script>
 addToHomescreen({skipFirstVisit:true,maxDisplayCount:1});
 </script>

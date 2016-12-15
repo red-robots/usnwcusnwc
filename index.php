@@ -9,11 +9,8 @@
 
 get_header(); ?>
 
-<div class="banner post">
-
-<?php if ( function_exists( 'soliloquy_slider' ) ) soliloquy_slider( '534' ); ?>
-
-</div>
-    
+<?php $post = get_post('1');
+setup_postdata($post);
+get_sidebar("banner");?>
 
 <?php get_footer(); ?>

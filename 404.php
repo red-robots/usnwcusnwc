@@ -1,11 +1,9 @@
 <?php get_header(); ?>
 
-<div class="category-banners">
-    <?php if ( function_exists( 'soliloquy_slider' ) ) soliloquy_slider( '557' ); ?>
-
-
-</div>
-   <div id="content">
+<?php $post = get_post('1');
+setup_postdata($post);
+get_sidebar("banner");?>
+	<div id="content">
 
 <div class="wrap">    
     <div id="full-page">

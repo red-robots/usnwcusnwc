@@ -5,11 +5,8 @@
 
 get_header('page'); ?>
 
-<div class="banner post">
-    <?php $slider=get_field("soliloquy");
-	if(function_exists('soliloquy_slider')&&$slider) soliloquy_slider($slider->ID); 
-	?>
-</div>
+
+ <?php get_sidebar("banner");?>
 <header class="post"><h1><?php the_title(); ?></h1></header>
 <?php 
 /*

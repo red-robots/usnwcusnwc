@@ -4,11 +4,10 @@
 */
 get_header(); ?>
 
-<div class="banner post">
-	<?php if(function_exists('soliloquy_slider')) soliloquy_slider('1608'); 
-	?>
-</div>
-<header class="post">
+ <?php $post = get_post('1');
+ setup_postdata($post);
+ get_sidebar("banner");?>
+ <header class="post">
 	<h1>News</h1>
 </header>
 <?php 

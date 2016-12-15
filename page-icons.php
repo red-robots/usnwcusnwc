@@ -4,11 +4,8 @@
 */
 get_header('page'); ?>
 
-<div class="banner post">
-    <?php $slider=get_field("soliloquy");
-	if(function_exists('soliloquy_slider')&&$slider) soliloquy_slider($slider->ID); 
-	?>
-</div>
+
+ <?php get_sidebar("banner");?>
 <?php 
 /*
  * The call to get_template_part gets the template function display_loop_icon
