@@ -1597,7 +1597,9 @@ div.trailer{
 div.trailer .fb-post, div.trailer .fb-post * {
 	width: 100% ! important;
 }
-
+.fc-header-right {
+    opacity: 0;
+}
 @media screen and (max-width: 1024px){
 	header.page nav {
 		margin-right: 2.8em;
@@ -1738,6 +1740,11 @@ div.trailer .fb-post, div.trailer .fb-post * {
 }
 /*/////////////////////////////Horizontal Small Screens/////////////////////////////*/
 @media screen and (max-width: 670px){
+    article.row-activity figure {
+        display: block;
+        width: 200px;
+        margin: 2% auto;
+    }
 	header.page img.logo {
 	    width: 30%;
 	    margin-left: 25%;
@@ -1848,11 +1855,6 @@ div.trailer .fb-post, div.trailer .fb-post * {
 		width: 200px;
 		margin: 2% auto;
 	}
-    article.row-activity figure {
-        display: block;
-        width: 200px;
-        margin: 2% auto;
-    }
 	article.row .copy {
 		width: 85%;
 		margin-left: auto;
