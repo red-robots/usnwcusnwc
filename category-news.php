@@ -4,7 +4,7 @@
 */
 get_header(); ?>
 
- <?php $post = get_post('1');
+ <?php $post = get_post('13642');
  setup_postdata($post);
  get_sidebar("banner");?>
  <header class="post">

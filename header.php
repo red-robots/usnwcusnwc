@@ -24,7 +24,8 @@
 <meta name="google-site-verification" content="e3L8kU2GBIb6wsJkRj2n6v1GDc-ajo6yg6IgX2xYl7w" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" />
+    <link rel="stylesheet" type="text/css"  href="<?php bloginfo('stylesheet_url'); ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/flexslider.css" />
 <link rel="apple-touch-icon" sizes="57x57" href="/wp-content/uploads/2014/10/W_57x57.jpg" />
 <link rel="apple-touch-icon" sizes="72x72" href="/wp-content/uploads/2014/10/W_72x72.jpg" />
 <link rel="apple-touch-icon" sizes="114x114" href="/wp-content/uploads/2014/10/W_114x114.jpg" />

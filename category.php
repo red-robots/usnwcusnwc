@@ -22,11 +22,10 @@ elseif (is_category('riverjam')||is_category('completed-2016')||is_category('thu
 	header("Location: http://usnwc.org/riverjam/");
 	exit;
 	get_header('category'); ?>
-	<div class="banner post">
-		<?php if (in_category('riverjam')) {
-			if ( function_exists( 'soliloquy_slider' ) ) soliloquy_slider( '811' );  
-		}?>
-	</div>
+	<?php $post = get_post('522');
+	setup_postdata($post);
+	get_sidebar("banner");
+	wp_reset_postdata();?>
 	<header class="post"><h1>River Jam</h1></header>
 	<section class="post river-jam">
         	<p>Join us on Thursday and Saturday nights from  May through  September for River Jam, the USNWC’s weekly concert series.  A talented line-up of national musical acts provide the perfect back drop for a fun summer evening outdoors.  Bring your friends, enjoy our large food and craft beer selection, and take in the sights and sounds of River Jam.</p>

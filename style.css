@@ -1195,7 +1195,7 @@ article.row-activity {
 .diff-icon {
 	width: 20%;
 	display: inline-block;
-	margin: 10px 0 0 0;
+	margin: 0;
 }
 .activities-key-wrapper {
     text-align: center;
@@ -1264,6 +1264,16 @@ img.activity-key {
 	text-align: center;
 	padding: 20px 10px;
 }
+.passes-col p {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tours-col p {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .passes-col {
 	width: 33.33333%;
 }
@@ -1273,9 +1283,14 @@ section.post .passes-col p, section.post .tours-col p {
 .tours-col {
 	width: 50%;
 }
+.table {
+    display: table;
+    width: 100%;
+}
 .chart-row {
 	width: 100%;
-	float: left;
+    display: table-row;
+    line-height: 1;
 }
 .chart-row h3 {
 	font-size: 12pt;
@@ -1283,35 +1298,34 @@ section.post .passes-col p, section.post .tours-col p {
 }
 .chart-row h3.title-spacer, .title-spacer {
 	padding-left: 20px;
-}
-.chart-col-side, .chart-col-mid {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-	float: left;
+    margin-top: .476em;
 }
 .chart-col-side {
-	width: 37%;
-	padding: .5%;
+    width: 37%;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	display: table-cell;
 }
 .chart-col-mid {
 	width: 22%;
 	text-align: center;
-	padding: .5%;
+    display: table-cell;
 }
 .chart-col-last {
 	text-align: center;
 }
 .asterisk {
 	width: 20px;
-	float: left;
 	color: #c10435;
 	font-size: 20pt;
 	text-align: center;
-	margin-top: -4px;
+	margin-top: 11px;
+    line-height: 1px;
+    float: left;
 }
 .chart-title {
 	width: auto;
-	float: left;
+    float: left;
 }
 .row-grey {
 	background-color: #eee;
@@ -1405,6 +1419,13 @@ article.row .copy, article.row-activity .copy {
 	width: 74%;
 	height: auto;
 	vertical-align: top;
+}
+article.row-activity .copy {
+    display: inline-block;
+    width: 74%;
+    height: auto;
+    vertical-align: top;
+    margin-top: .5em;
 }
 .rafting-notice article.row .copy {
 	width: 90%;
@@ -1592,6 +1613,9 @@ div.trailer .fb-post, div.trailer .fb-post * {
 }
 /*///////////////////////////iPad/////////////////////////////////*/
 @media screen and (max-width: 768px)  {
+    .asterisk {
+        margin-top: 7px;
+    }
 	header.page img.logo {
 		width: 45%;
 		margin-left: 17.5%;
@@ -1684,8 +1708,13 @@ div.trailer .fb-post, div.trailer .fb-post * {
 		font-size: 10pt;
 	}
 	.chart-row h3 {
-		font-size: 8pt;
+		font-size: 7pt;
 	}
+
+    .chart-row h3.title-spacer, .title-spacer {
+        padding-left: 0;
+        text-align: center;
+    }
 	.asterisk {
 		width: 10px;
 		font-size: 10pt
@@ -1699,7 +1728,13 @@ div.trailer .fb-post, div.trailer .fb-post * {
 	section.post .passes-col p, section.post .tours-col p {
 		font-size: 8pt
 	}
+    .passes-col p, .tours-col p {
+        width: 100%;
+    }
 	/* /ac */
+    /* hide slideshow nav on mobile*/
+
+
 }
 /*/////////////////////////////Horizontal Small Screens/////////////////////////////*/
 @media screen and (max-width: 670px){
@@ -1770,6 +1805,9 @@ div.trailer .fb-post, div.trailer .fb-post * {
 }
 /*////////////////////////////////Small Screens////////////////////////////////*/
 @media screen and (max-width: 500px) {
+    img.activity-key {
+        max-width: 8px;
+    }
 	header.page img.logo {
 		width: 45%;
 		margin-left: 15.5%;
@@ -1810,6 +1848,11 @@ div.trailer .fb-post, div.trailer .fb-post * {
 		width: 200px;
 		margin: 2% auto;
 	}
+    article.row-activity figure {
+        display: block;
+        width: 200px;
+        margin: 2% auto;
+    }
 	article.row .copy {
 		width: 85%;
 		margin-left: auto;
@@ -1824,7 +1867,7 @@ div.trailer .fb-post, div.trailer .fb-post * {
 		display: inline-block;
 		width: auto;
 		float: none;
-		margin: 6px 0 0 0;
+		margin: 0;
 	}
 	.col-titles, .col-qual, .col-title, .pass-options-link {
 		font-size: 10pt;

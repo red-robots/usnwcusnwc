@@ -89,7 +89,7 @@ while( have_posts() ) : the_post();
 			<section class="tours copyz passes-section ">
 				<h2>ACTIVITIES</h2>
 
-				<div class="grey-border">
+				<div class="grey-border table">
 
 				<!--
 				#########################################
@@ -133,12 +133,12 @@ while( have_posts() ) : the_post();
 
 				<div class="chart-row <?php echo $class; ?>">
 					<div class="chart-col-side">
-						<div class="asterisk">
-							<?php if( $asterisk == 'Yes' ) { echo '*'; } else { echo '&nbsp;';} ?>
-						</div>
-						<div class="chart-title <?php echo $spacer; ?>">
+						<span class="chart-title <?php echo $spacer; ?>">
 							<?php echo $name; ?>
-						</div>
+						</span>
+                        <span class="asterisk">
+							<?php if( $asterisk == 'Yes' ) { echo '*'; } ?>
+						</span>
 					</div>
 					<div class="chart-col-mid">
 						<div class="diff-icon">
@@ -195,23 +195,23 @@ while( have_posts() ) : the_post();
 						$int = in_array( 'Intermediate', get_sub_field('difficutly') );
 						$adv = in_array( 'Difficult', get_sub_field('difficutly') );
 
-						if( $i == 2 ) {
+						if( $i == 1 ) {
 							$class = 'row-grey';
-							$i=0;
 						} else {
 							$class = '';
+							$i=0;
 						}
 
 					?>
 
 				<div class="chart-row <?php echo $class; ?>">
 					<div class="chart-col-side">
-						<div class="asterisk">
-							<?php if( $asterisk == 'Yes' ) { echo '*'; } else { echo '&nbsp;';} ?>
-						</div>
-						<div class="chart-title">
+						<span class="chart-title">
 							<?php echo $name; ?>
-						</div>
+						</span>
+                        <span class="asterisk">
+							<?php if( $asterisk == 'Yes' ) { echo '*'; } ?>
+						</span>
 					</div>
 					<div class="chart-col-mid">
 						<div class="diff-icon">
@@ -268,23 +268,23 @@ while( have_posts() ) : the_post();
 						$int = in_array( 'Intermediate', get_sub_field('difficutly') );
 						$adv = in_array( 'Difficult', get_sub_field('difficutly') );
 
-						if( $i == 2 ) {
+						if( $i == 1 ) {
 							$class = 'row-grey';
-							$i=0;
 						} else {
 							$class = '';
+							$i=0;
 						}
 
 					?>
 
 				<div class="chart-row <?php echo $class; ?>">
 					<div class="chart-col-side">
-						<div class="asterisk">
-							<?php if( $asterisk == 'Yes' ) { echo '*'; } else { echo '&nbsp;';} ?>
-						</div>
-						<div class="chart-title">
+						<span class="chart-title">
 							<?php echo $name; ?>
-						</div>
+						</span>
+                        <span class="asterisk">
+							<?php if( $asterisk == 'Yes' ) { echo '*'; } ?>
+						</span>
 					</div>
 					<div class="chart-col-mid">
 						<div class="diff-icon">
@@ -354,12 +354,12 @@ while( have_posts() ) : the_post();
 
 				<div class="chart-row <?php echo $class; ?>">
 					<div class="chart-col-side">
-						<div class="asterisk">
-							<?php if( $asterisk == 'Yes' ) { echo '*'; } else { echo '&nbsp;';} ?>
-						</div>
-						<div class="chart-title">
+						<span class="chart-title">
 							<?php echo $name; ?>
-						</div>
+						</span>
+                        <span class="asterisk">
+							<?php if( $asterisk == 'Yes' ) { echo '*'; } ?>
+						</span>
 					</div>
 					<div class="chart-col-mid">
 						<div class="diff-icon">
@@ -428,12 +428,12 @@ while( have_posts() ) : the_post();
 
 				<div class="chart-row <?php echo $class; ?>">
 					<div class="chart-col-side">
-						<div class="asterisk">
-							<?php if( $asterisk == 'Yes' ) { echo '*'; } else { echo '&nbsp;';} ?>
-						</div>
-						<div class="chart-title">
+						<span class="chart-title">
 							<?php echo $name; ?>
-						</div>
+						</span>
+                        <span class="asterisk">
+							<?php if( $asterisk == 'Yes' ) { echo '*'; } ?>
+						</span>
 					</div>
 					<div class="chart-col-mid">
 						<div class="diff-icon">
@@ -491,23 +491,23 @@ while( have_posts() ) : the_post();
 						$int = in_array( 'Intermediate', get_sub_field('difficutly') );
 						$adv = in_array( 'Difficult', get_sub_field('difficutly') );
 
-						if( $i == 2 ) {
+						if( $i == 1 ) {
 							$class = 'row-grey';
-							$i=0;
 						} else {
 							$class = '';
+							$i=0;
 						}
 
 					?>
 
 				<div class="chart-row <?php echo $class; ?>">
 					<div class="chart-col-side">
-						<div class="asterisk">
-							<?php if( $asterisk == 'Yes' ) { echo '*'; } else { echo '&nbsp;';} ?>
-						</div>
-						<div class="chart-title">
+						<span class="chart-title">
 							<?php echo $name; ?>
-						</div>
+						</span>
+                        <span class="asterisk">
+							<?php if( $asterisk == 'Yes' ) { echo '*'; } ?>
+						</span>
 					</div>
 					<div class="chart-col-mid">
 						<div class="diff-icon">
@@ -565,23 +565,23 @@ while( have_posts() ) : the_post();
 						$int = in_array( 'Intermediate', get_sub_field('difficutly') );
 						$adv = in_array( 'Difficult', get_sub_field('difficutly') );
 
-						if( $i == 2 ) {
+						if( $i == 1 ) {
 							$class = 'row-grey';
-							$i=0;
 						} else {
 							$class = '';
+							$i=0;
 						}
 
 					?>
 
 				<div class="chart-row <?php echo $class; ?>">
 					<div class="chart-col-side">
-						<div class="asterisk">
-							<?php if( $asterisk == 'Yes' ) { echo '*'; } else { echo '&nbsp;';} ?>
-						</div>
-						<div class="chart-title">
+						<span class="chart-title">
 							<?php echo $name; ?>
-						</div>
+						</span>
+                        <span class="asterisk">
+							<?php if( $asterisk == 'Yes' ) { echo '*'; } ?>
+						</span>
 					</div>
 					<div class="chart-col-mid">
 						<div class="diff-icon">

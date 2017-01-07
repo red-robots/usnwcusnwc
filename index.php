@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<?php $post = get_post('1');
+<?php $post = get_post('13459');
 setup_postdata($post);
 get_sidebar("banner");?>
 
