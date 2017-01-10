@@ -570,7 +570,6 @@ a.register-button-link:hover{
 .buy-button{
 	background:#c2c2c2;
 	color:#fff;
-	margin-bottom:20px;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-o-border-radius: 10px;
@@ -1206,6 +1205,7 @@ article.row-activity {
 }
 .activities-key-wrapper .pair span {
     margin-left: 4px;
+    font-size: 14px;
 }
 .activities-key-wrapper .pair.novice, .activities-key-wrapper .pair.intermediate {
     margin-right: 10px;
@@ -1398,8 +1398,11 @@ article.row figure, article.row-activity figure {
 	margin: 1em 3% 0 0;
 	display: inline-block;
 }
+.pass-options-link {
+    text-align: center;
+}
 /* ac */
-.col-titles, .col-qual, .col-title, .pass-options-link {
+.col-titles, .col-qual, .col-title, .pass-options-link, .activities-key-wrapper h2 {
 	font-size: 18pt;
 }
 .rafting-notice article.row figure {
@@ -1608,7 +1611,7 @@ div.trailer .fb-post, div.trailer .fb-post * {
 	    width: 80px;
 	}
 	/* ac */
-	.col-titles, .col-qual, .col-title, .pass-options-link {
+	.col-titles, .col-qual, .col-title, .pass-options-link, .activities-key-wrapper h2 {
 		font-size: 16pt;
 	}
 	/* /ac */
@@ -1703,7 +1706,8 @@ div.trailer .fb-post, div.trailer .fb-post * {
 		display: block;
 	}
 	/* ac */
-	.col-titles, .col-qual, .col-title, .pass-options-link {
+	.col-titles, .col-qual, .col-title, .pass-options-link, .activities-key-wrapper h2,
+    .activities-key-wrapper .pair span {
 		font-size: 12pt;
 	}
 	.pass-headings h3, .tour-headings h3 {
@@ -1812,6 +1816,9 @@ div.trailer .fb-post, div.trailer .fb-post * {
 }
 /*////////////////////////////////Small Screens////////////////////////////////*/
 @media screen and (max-width: 500px) {
+    .buy-button{
+        margin: 10px 0;
+    }
     img.activity-key {
         max-width: 8px;
     }
@@ -1871,7 +1878,8 @@ div.trailer .fb-post, div.trailer .fb-post * {
 		float: none;
 		margin: 0;
 	}
-	.col-titles, .col-qual, .col-title, .pass-options-link {
+	.col-titles, .col-qual, .col-title, .pass-options-link, .activities-key-wrapper h2,
+    .activities-key-wrapper .pair span {
 		font-size: 10pt;
 	}
 	/* /ac */

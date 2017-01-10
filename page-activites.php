@@ -139,11 +139,11 @@ if ( $parent->have_posts() ) : ?>
 	
 	<?php endwhile; ?>
     </section>
-        <span class="pass-options-link"><a href="<?php echo get_permalink(62);?>">See Pass Options</a></span>
     </section>
     <div class="clear"></div>
 <?php endif; // end child query ?>
             <aside class="activities-key-wrapper">
+                <div class="pass-options-link"><a href="<?php echo get_permalink(62);?>">See Pass Options</a></div>
                 <h2>Key</h2>
                 <div class="novice pair"><img class="activity-key" src="<?php bloginfo('template_url'); ?>/images/diff-easy.png" /><span>Novice</span></div><!--.novice-->
                 <div class="intermediate pair"><img class="activity-key" src="<?php bloginfo('template_url'); ?>/images/diff-med.png" /><span>Intermediate</span></div><!--.intermediate-->

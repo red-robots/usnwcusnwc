@@ -92,7 +92,16 @@ html[xmlns] .flexslider .slides {
     min-height: 300px;
     opacity: 0;
 }
+.flexslider .slides .image-wrapper.yes-mobile img.desktop {
+    display: none;
+}
 @media screen and (min-width: 767px) {
+    .flexslider .slides .image-wrapper.yes-mobile img.desktop {
+        display: block;
+    }
+    .flexslider .slides .image-wrapper.yes-mobile img.mobile {
+        display: none;
+    }
     .flexslider .slides .image-wrapper {
         background-image: none !important;
     }
