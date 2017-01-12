@@ -567,6 +567,9 @@ a.register-button-link:hover{
 	text-decoration: none;
 }
 /*///////////////////styling for buy buttons////////////////////////*/
+.buy-button-wrapper {
+    text-align: center;
+}
 .buy-button{
 	background:#c2c2c2;
 	color:#fff;
@@ -1032,6 +1035,9 @@ header.post h2, header.post h1{
 	width: 60%;
 	margin: 1% auto;
 	padding: 0;
+}
+.icon.container.field-trips .icon {
+    width: 170px;
 }
 .icon.container .icon {
 	width: 198px;
@@ -1915,7 +1921,7 @@ div.trailer .fb-post, div.trailer .fb-post * {
 	}
 }
 @media screen and (max-width: 430px) {
-	.contact .icon.container .icon, .icon.container .icon {
+	.contact .icon.container .icon, .icon.container .icon, .icon.container.field-trips .icon {
 		width: 178px;
 	}
 }
@@ -1927,7 +1933,7 @@ div.trailer .fb-post, div.trailer .fb-post * {
 	.tile.container .tile > div {
 		background-size: 304px;
 	}
-	.contact .icon.container .icon, .icon.container .icon {
+	.contact .icon.container .icon, .icon.container .icon, .icon.container.field-trips .icon {
 		width: 140px;
 	}
 	nav.bookmark-links table tr:nth-child(2) td {
@@ -2005,7 +2011,7 @@ div.trailer .fb-post, div.trailer .fb-post * {
 		height: auto !important;
 		width: 1000px ! important;
 	}
-	.tile.container .tile, .icon.container .icon {
+	.tile.container .tile, .icon.container .icon, .icon.container.field-trips .icon {
 		position: static ! important;
 		display: inline-block ! important;
 	}

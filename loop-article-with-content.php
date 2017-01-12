@@ -65,6 +65,10 @@ function display_loop_article($args){
         endif;//if for page query?>
 			<?php while($query->have_posts()){
 				$query->the_post();
+				$exclude = get_field('exclude');
+				if($exclude && strcmp($exclude,"yes")===0){
+				    continue;
+                }
 				/*
 				 * Get the video code if any
 				 */
