@@ -85,28 +85,6 @@ global $sidebar;
 			</tbody>
 		</table>
 	</section>
-	<section class="sidebar post container recommended-vendors">
-		<header>
-			<h1>Recommended Vendors</h1>  
-    		</header>
-		<table>
-			<tbody>
-				<tr>
-					<td>
-						<ul>
-							<li style="text-align: left;"><a href="http://www.adorationphotography.com/" style="color:#3a80bc;">Adoration Photography</a></li>
-							<li style="text-align: left;"><a href="http://www.tizzerts.com/" style="color:#3a80bc;">Tizzerts Bakery</a></li>
-							<li style="text-align: left;"><a href="http://www.toddmurphyevents.com/index.html" style="color:#3a80bc;">Todd Murphy Events</a></li>
-							<li style="text-align: left;"><a href="http://www.pixelsonpaper.biz/" style="color:#3a80bc;">Pixels on Paper</a></li>
-							<li style="text-align: left;"><a href="http://firstimpressionslinen.com/cms/" style="color:#3a80bc;">First Impressions – Party Linen Rental</a></li>
-							<li style="text-align: left;"><a href="http://stephanie-egan.com/website/#/special/splash/" style="color:#3a80bc;">Stephanie Egan Photography</a></li>
-							<li style="text-align: left;"><a href="http://thembaimagery.com/" style="color:#3a80bc;">Themba Imagery</a></li>
-						</ul>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-	</section>
 <?php } ?>
 <?php if(is_page('outfitters')) { ?>
 	<section class="sidebar post container our-brands">

@@ -23,7 +23,7 @@
 								     echo $row['mobile_image']['url'];
 							     else:
                                      echo $row['image']['url'];
-							     endif;?>">
+							     endif;?>);">
                                 <?php if($row['link']):?>
 								    <a href="<?php echo $row['link']; ?>" <?php if ( $row['target'] ):echo 'target="_blank"'; endif; ?>>
 								<?php endif;?>
