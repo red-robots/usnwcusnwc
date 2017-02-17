@@ -66,7 +66,7 @@ global $sidebar;
 				</tr>
 				<tr>
 					<td><a name="1tented sites"></a>
-						<img class="venue-image" src="/wp-content/uploads/2015/05/BigDropTents.jpg" alt="" />
+						<img class="venue-image" src="http://usnwc.org/wp-content/uploads/2017/02/BigDropTents.jpg" alt="" />
 						<h2>Big Drop Tents</h2>
 						<p style="text-align: left;"><!--<a href="http://usnwc.org/tour/hospitality-tents/"><img class="alignleft size-full wp-image-5621" title="USNWC Hospitality Tents | Virtual Tour" src="/wp-content/uploads/2014/11/hosp-tents.jpg" alt="" width="200" height="120" /></a>-->These tented sites are located alongside the most exciting stretch of the world’s largest man-made river. The Big Drop Tents will place your event in the center of the activity, providing an entertaining view for your guests. With up to three tents available, this space can accommodate a wide range of party sizes.</p>
 						<p style="text-align: left;">Capacity: Ceremony – 100 people per tent; Reception – 50 people per tent</p>
