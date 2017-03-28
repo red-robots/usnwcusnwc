@@ -1597,6 +1597,19 @@ section.post .iframe-wrapper {
 section.post .iframe-wrapper iframe {
 	height: auto;
 }
+.post .iframe-dynamic {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 42.5%;
+}
+.post .iframe-dynamic iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
 div.trailer{
 	margin: 2% 2% 2% 2%;
 	width: 53%;

@@ -22,7 +22,7 @@ display_loop_article(array(
             'key' => 'upgrade_check', // name of custom field
             'value' => 'no'
         )
-    )
+    ),'orderby'=>'menu_order'
 ));
 display_loop_article(array(
 	'post_parent'=>$post->ID,
@@ -34,7 +34,7 @@ display_loop_article(array(
             'key' => 'upgrade_check', // name of custom field
             'value' => 'yes'
         )
-    )
+    ),'orderby'=>'menu_order'
 ));
 ?>
     

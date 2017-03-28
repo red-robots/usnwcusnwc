@@ -27,7 +27,7 @@ if($content=$post->post_content){ ?>
  * The loop cleans up and resets the query after it is called
  */
 get_template_part('loop','recursive');
-display_loop_tile_recursive(array('post_parent'=>$post->ID,'post_type'=>'page','order'=>'ASC', 'posts_per_page'=>'-1'));
+display_loop_tile_recursive(array('post_parent'=>$post->ID,'post_type'=>'page','order'=>'ASC', 'posts_per_page'=>'-1','orderby'=>'menu_order'));
 ?>
 
 
