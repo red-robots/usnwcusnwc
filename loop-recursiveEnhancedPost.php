@@ -72,7 +72,9 @@ function display_loop_tile_recursive_enhanced_post(){
         	} 
         	else{
         		$list_to_query[]=$query->post->ID;
-			$list_to_query_cat[]=get_field('cat');
+    			if(get_field('cat')) {
+				    $list_to_query_cat[] = get_field( 'cat' );
+			    }
         	}
 		} //end of while
 	} // end of if have posts
@@ -87,6 +89,9 @@ function display_loop_tile_recursive_enhanced_post(){
 	elseif($post_parent){
 		$query=new WP_Query(array('page_id'=>$post_parent));
 	}
+	else {
+	    return;
+    }
 	if($query->have_posts()){
 		$query->the_post();
 		if($list_to_display||$query->post->post_content){ ?>
