@@ -28,10 +28,10 @@
                                 <?php if($row['link']):?>
 								    <a href="<?php echo $row['link']; ?>" <?php if ( $row['target'] ):echo 'target="_blank"'; endif; ?>>
 								<?php endif;?>
-                                        <img class="desktop lazy" data-src="<?php echo $row['image']['url']; ?>"
+                                        <img class="desktop <?php if($i!==0) echo 'lazy';?>" <?php if($i!==0) echo 'data-';?>src="<?php echo $row['image']['url']; ?>"
 									     alt="<?php echo $row['image']['alt']; ?>">
                                         <?php if($row['mobile_image']):?>
-                                            <img class="mobile lazy" data-src="<?php echo $row['mobile_image']['url']; ?>"
+                                            <img class="mobile <?php if($i!==0) echo 'lazy';?>" <?php if($i!==0) echo 'data-';?>src="<?php echo $row['mobile_image']['url']; ?>"
                                                  alt="<?php echo $row['mobile_image']['alt']; ?>">
                                         <?php endif;?>
                                 <?php if($row['link']):?>
