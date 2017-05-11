@@ -10,7 +10,7 @@ if (is_category('daily-grid')) {
 	header("Location: http://usnwc.org/daily-activity-schedule/");
 	exit;
 }
-elseif (is_category('completed-2016')||is_category('thursday-events')) {
+elseif (is_category('completed')||is_category('thursday-events')) {
 	header("Location: http://usnwc.org/riverjam/");
 	exit;
 }
@@ -18,7 +18,7 @@ elseif (!is_category('riverjam')){
 	header("Location: http://usnwc.org/404/");
 	exit;	
 }
-elseif (is_category('riverjam')||is_category('completed-2016')||is_category('thursday-events')) {
+elseif (is_category('riverjam')||is_category('completed')||is_category('thursday-events')) {
 	header("Location: http://usnwc.org/riverjam/");
 	exit;
 	get_header('category'); ?>
