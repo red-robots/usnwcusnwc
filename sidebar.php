@@ -185,6 +185,7 @@ global $sidebar;
 			<a href="https://www.linkedin.com/company/u-s--national-whitewater-center?trk=biz-companies-cym" target="_blank"><div class="icon"><img src="http://usnwc.org/wp-content/uploads/2016/10/LinkedIn.png" alt="LinkedIn Icon"><header><h2>LinkedIn</h2></header></div></a>
 			<a href="https://vimeo.com/usnwc" target="_blank"><div class="icon"><img src="http://usnwc.org/wp-content/uploads/2016/10/Vimeo.png" alt="Vimeo Icon"><header><h2>Vimeo</h2></header></div></a>
 			<a href="http://explore.usnwc.org/" target="_blank"><div class="icon"><img src="http://usnwc.org/wp-content/uploads/2016/10/Explore.png" alt="Explore Icon"><header><h2>Explore</h2></header></div></a>
+			<a href="https://www.youtube.com/user/theusnwc" target="_blank"><div class="icon"><img src="http://usnwc.org/wp-content/uploads/2017/05/YouTube.png" alt="YouTube Icon"><header><h2>YouTube</h2></header></div></a>
 		</div>
 	</section>
 <?php } // End contact ?>  
