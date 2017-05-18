@@ -1482,6 +1482,14 @@ section.post.container.event-venues hr {
 	border-bottom: 2px solid #d4d4d6;
 	margin: 10px auto;
 }
+/*////////////////open positions page //////////////////////*/
+.open-positions iframe, .open-positions-new iframe{
+	width: 100%;
+	height: auto;
+	border: 0;
+	overflow: visible;
+
+}
 /*////////////////////////////////////*/
 nav.bookmark-links table {
 	margin: auto;

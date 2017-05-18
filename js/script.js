@@ -7,6 +7,12 @@ var current_page_width = 0;
 jQuery.noConflict();
 
 jQuery(document).ready(function ($) {
+    
+    $('.open-positions iframe, .open-positions-new iframe').load(function(){
+        var $this = $(this);
+        var scroll_height = $this[0].contentWindow.document.body.scrollHeight;
+        $this.css("height",scroll_height+"px");
+    });
     function anchor_scroll_capsule(e) {
         if (!e.sudo) {
             if (e.target.href) {
