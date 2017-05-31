@@ -17,14 +17,14 @@ p {
 	margin: 25px 0; 
 }
 
-a{ color:#c62034;}
+a{ color:#c10435;}
 a:hover{ color:#000;}
 .fa{ font-size:18px!important;}
 
 .jobtitle h3{ text-align:center;}
 #pagetitle{ text-align:center;}
 
-p.breadcrumb{text-align:center; font-size:12px;}
+p.breadcrumb, p.nav {text-align:center; font-size:11pt;}
 p.breadcrumb a{ padding: 0px 6px;}
 
 	/* 
@@ -39,14 +39,19 @@ p.breadcrumb a{ padding: 0px 6px;}
 		/*background: #eee; */
 	}
 	th { 
-		background-color:#c62034;
+		background-color:#c10435;
 		color: white; 
 		font-weight: bold; 
+		font-size: 14pt;
+		text-transform: uppercase;
 	}
 	td, th { 
 		padding: 15px; 
 		border-bottom: 1px solid #ccc; 
 		text-align: left; 
+	}
+	td {
+		font-size: 11pt;
 	}
 	.tab-content{line-height:22px;}
 	.nav{ text-align:center;}
