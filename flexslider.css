@@ -92,6 +92,9 @@ html[xmlns] .flexslider .slides {
     min-height: 300px;
     opacity: 0;
 }
+.flexslider .slides .image-wrapper img.lazy {
+    height: 0;
+}
 .flexslider .slides .image-wrapper.yes-mobile img.desktop {
     display: none;
 }

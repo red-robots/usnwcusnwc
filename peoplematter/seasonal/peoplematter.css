@@ -3,7 +3,8 @@
 	padding: 0; 
 }
 body { 
-	
+	font-family: franklin_gothic_fs_cdregular, Arial, Helvetica, sans-serif;
+	color: #4b5054;
 }
 
 #wrapper{ max-width:1100px; width:100%; padding: 15px;  margin: 0 auto;}
@@ -18,13 +19,13 @@ p {
 }
 
 a{ color:#c10435;}
-a:hover{ color:#000;}
+a:hover{ color:#4b5054;}
 .fa{ font-size:18px!important;}
 
 .jobtitle h3{ text-align:center;}
 #pagetitle{ text-align:center;}
 
-p.breadcrumb, p.nav {text-align:center; font-size:11pt;}
+p.breadcrumb, p.nav {text-align:center; font-size:10pt;}
 p.breadcrumb a{ padding: 0px 6px;}
 
 	/* 
@@ -39,11 +40,13 @@ p.breadcrumb a{ padding: 0px 6px;}
 		/*background: #eee; */
 	}
 	th { 
-		background-color:#c10435;
+		background-color:#c2c2c2;
 		color: white; 
-		font-weight: bold; 
-		font-size: 14pt;
+		font-size: 18pt;
+		letter-spacing: .18em;
 		text-transform: uppercase;
+		font-weight: normal;
+		line-height: 1.1;
 	}
 	td, th { 
 		padding: 15px; 
