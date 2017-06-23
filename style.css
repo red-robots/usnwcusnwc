@@ -632,8 +632,7 @@ header.page {
 	width: 100%;
 	height: auto;
 	display: block;
-	background-color: white;
-	opacity: .80;
+	background-color: rgba(255,255,255,0.8);
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -703,16 +702,15 @@ header.page nav ul li:last-child a, footer.page nav ul li:last-child a{
 header.page nav ul ul {
 	margin:0;
 	position:absolute;
-	top:25px;
+	top:69px;
 	left: -10px;
 	z-index:99;
 	width: 135px;
-	background:#FFF;
-	padding: 16px 10px 0px;
+	background-color: rgba(255,255,255,0.80);
+	padding: 0 10px;
 	display:none;
 	background-position: top;
 	background-repeat: no-repeat;
-	opacity: 0.85;
 }
 header.page nav ul ul li{
 	display:block;

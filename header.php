@@ -77,7 +77,7 @@ if(is_category()){
     <nav>
    		<?php wp_nav_menu( array( 'theme_location' => 'header', 'container' => '' ) ); ?>
 	</nav>
-    <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="logo" src="/wp-content/uploads/2015/06/logo-main.png" alt="US National Whitewater Center Logo"></a>
+    <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="logo" src="http://usnwc.org/wp-content/uploads/2015/06/logo-main.png" alt="US National Whitewater Center Logo"></a>
 </header>
 <?php if(!is_home()) { ?>
 <nav class="page breadcrumbs">
