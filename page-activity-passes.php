@@ -623,11 +623,11 @@ while( have_posts() ) : the_post();
 						<span class="">Advanced</span>
 					</div>
 					<div class="act-def">Children must have guardian supervison at all times.</div>
-					<div class="astr-discl">
+					<!--<div class="astr-discl">
 						<div class="astr-def">
 							<span class="asterisk">* </span> = Activity not available with Single Activity Pass
 						</div>
-					</div>
+					</div>-->
 				</div>
 				
 
