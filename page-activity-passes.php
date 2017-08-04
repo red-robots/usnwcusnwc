@@ -57,29 +57,6 @@ while( have_posts() ) : the_post();
 
 			</section>
 
-			<section class="tours copyz passes-section">
-				<h2>TOURS</h2>
-
-				<div class="tour-headings">
-					<header>
-						<h3>CANOPY TOUR</h3>
-					</header>
-					<header>
-						<h3>RAFT + ZIP TOUR</h3>
-					</header>
-				</div><!-- tour headings -->
-
-				<div class="act-pass-cont">
-					<div class="tours-col">
-						<?php echo $canopy_tour; ?>
-					</div><!-- col -->
-					<div class="tours-col">
-						<?php echo $raft_zip_tour; ?>
-					</div><!-- col -->
-				</div><!-- act-pass-cont -->
-
-			</section>
-
 			<?php 
 			// set some conditionals for the difficulty
 			// if( )
