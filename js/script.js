@@ -7,13 +7,7 @@ var current_page_width = 0;
 jQuery.noConflict();
 
 jQuery(document).ready(function ($) {
-    
-    $('.open-positions iframe, .open-positions-new iframe').load(function(){
-        var $this = $(this);
-        var html = $this[0].contentWindow.document.getElementsByTagName('html')[0];
-        var scroll_height = html.scrollHeight;
-        $this.css("height",scroll_height+"px");
-    });
+  
     function anchor_scroll_capsule(e) {
         if (!e.sudo) {
             if (e.target.href) {

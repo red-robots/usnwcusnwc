@@ -1628,6 +1628,14 @@ div.trailer .fb-post, div.trailer .fb-post * {
 .fc-header-right {
     opacity: 0;
 }
+.riverjam .music img.mobile {
+	display: block;
+	width: 100%;
+}
+.riverjam .music img.desktop {
+	display: none;
+	width: 100%;
+}
 @media screen and (max-width: 1024px){
 	header.page nav {
 		margin-right: 2.8em;
@@ -1640,6 +1648,15 @@ div.trailer .fb-post, div.trailer .fb-post * {
 		font-size: 16pt;
 	}
 	/* /ac */
+}
+/*////////////flexslider//////////////*/
+@media screen and (min-width: 767px) {
+	.riverjam .music img.desktop {
+		display: block;
+	}
+	.riverjam .music img.mobile {
+		display: none;
+	}
 }
 /*///////////////////////////iPad/////////////////////////////////*/
 @media screen and (max-width: 768px)  {
