@@ -74,9 +74,9 @@ src="https://www.facebook.com/tr?id=236370623380911&ev=PageView&noscript=1"
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCil33pwgSabW3D8ZmA2-z-5m-EXFj2iLg&libraries=places,geometry"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<?php wp_enqueue_script( 'peoplematter','http://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/peoplematter.js',array('jquery'),'20171030');
-wp_enqueue_script( 'bootstrap-sortable','http://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/bootstrap-sortable.js',array('jquery'),'20171030');
-wp_enqueue_script( 'lodash','http://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/lodash.underscore.min.js',array('jquery'),'20171030');?>
+<?php wp_enqueue_script( 'peoplematter','http://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/peoplematter.js',array('jquery'),'20171030',true);
+wp_enqueue_script( 'bootstrap-sortable','http://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/bootstrap-sortable.js',array('jquery'),'20171030',true);
+wp_enqueue_script( 'lodash','http://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/lodash.underscore.min.js',array('jquery'),'20171030',true);?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <!--end pm seasonal-->
 </head>

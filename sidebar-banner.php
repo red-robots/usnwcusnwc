@@ -13,7 +13,7 @@
 					<?php if ( strcmp( $row['video_or_image'], "video" ) === 0 && $row['video'] ): ?>
 						<li>
 							<div class="iframe-wrapper">
-								<iframe src="<?php echo $row['video']; ?>" allowfullscreen="true"
+								<iframe src="<?php echo $row['video']; ?>" webkitallowfullscreen mozallowfullscreen allowfullscreen="true"
 								        frameborder="0"></iframe>
 							</div><!--.iframe-wrapper-->
 						</li>

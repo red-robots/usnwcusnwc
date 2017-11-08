@@ -1,4 +1,3 @@
-(function($){  
   //Global Variables for Peoplematter
   var sNoJobs = "Sorry, no job openings match the criteria in which you entered.";
   var sAlias = 'usnwc';
@@ -33,7 +32,7 @@
   // Logic for getting data based off of Geolocation
   */
   function getGeoPositionAJAX(){
-      $.ajax({
+       jQuery.ajax({
           url: 'http://freegeoip.net/json/',
           type: "GET",
           dataType: "jsonp",
@@ -327,7 +326,6 @@
   // navigator.geolocation.getCurrentPosition(getHTML5GeoPosition, showHTML5GeoError);
 
   runControllers();
-
   function runControllers(){
     jQuery(document).ready(function(){
       jQuery('.tab7link').hide();
@@ -336,15 +334,15 @@
     for (var i = aAlias.length - 1; i >= 0; i--) {
       if(bUseCategoryAPI){
         var _alias = aAlias[i];
-        $.when(getJobCategories(_alias)).done(function(a1){
-          $.when(getBusinessUnits(_alias)).done(function(a2){
-            $.when(getJobOpenings(aCategories)).done(function(a3){
+         jQuery.when(getJobCategories(_alias)).done(function(a1){
+           jQuery.when(getBusinessUnits(_alias)).done(function(a2){
+             jQuery.when(getJobOpenings(aCategories)).done(function(a3){
             });
           });
         });
       }else{
-        $.when(getBusinessUnits(aAlias[i])).done(function(a2){
-          $.when(getJobOpenings(aCategories)).done(function(a3){
+         jQuery.when(getBusinessUnits(aAlias[i])).done(function(a2){
+           jQuery.when(getJobOpenings(aCategories)).done(function(a3){
           });
         });
       }
@@ -378,7 +376,7 @@
     if(bUseCategoryAPI && !jQuery.isEmptyObject(aCategories)){
       for(var oCategory in aCategories){
         for(var oBusinessUnit in aBusinessUnitsAjax){
-          $.when(getJobOpeningsAjax(aBusinessUnitsAjax[oBusinessUnit], aCategories[oCategory])).done(function(a3){
+           jQuery.when(getJobOpeningsAjax(aBusinessUnitsAjax[oBusinessUnit], aCategories[oCategory])).done(function(a3){
               iJobOpeningsAjaxCount++;
 
               if(iJobOpeningsAjaxCount === (aBusinessUnitsAjax.length * aCategories.length)){
@@ -400,7 +398,7 @@
       }
     }else{
       for(var oBusinessUnit in aBusinessUnitsAjax){
-        $.when(getJobOpeningsAjax(aBusinessUnitsAjax[oBusinessUnit], null)).done(function(a3){
+         jQuery.when(getJobOpeningsAjax(aBusinessUnitsAjax[oBusinessUnit], null)).done(function(a3){
             iJobOpeningsAjaxCount++;
 
             if(iJobOpeningsAjaxCount === aBusinessUnitsAjax.length){
@@ -436,14 +434,14 @@
 
     //Enables Bootstrap Sortable
     if(jQuery.isFunction(jQuery.bootstrapSortable)){
-        $.bootstrapSortable(true);
+         jQuery.bootstrapSortable(true);
       }
 
     //Makes Location Name and Business Name Links clickable
-    $('.tab4link').click(function(e){
+     jQuery('.tab4link').click(function(e){
       e.preventDefault();
 
-      sLocationName = $(this).attr('data');
+      sLocationName =  jQuery(this).attr('data');
       oFilteredBusinessUnit = {};
 
       for(var oBusinessUnit in aBusinessUnits){
@@ -463,7 +461,7 @@
         sTab = jQuery(this).attr('class');
       }
 
-      $(this).tab('show');
+       jQuery(this).tab('show');
     });
 
     //Makes Job Opening Detail links clickable
@@ -476,10 +474,10 @@
   }
 
   function bindDetailLinks(){
-    $('.tab5link').click(function(e){
+     jQuery('.tab5link').click(function(e){
       e.preventDefault();
 
-      sId = $(this).attr('data');
+      sId =  jQuery(this).attr('data');
       oFilteredJobOpening = {};
 
       for(var oJobOpening in aJobOpenings){
@@ -490,7 +488,7 @@
       }
 
       drawJobOpening(oFilteredJobOpening);
-      $(this).tab('show');
+       jQuery(this).tab('show');
     });
   }
 
@@ -523,7 +521,7 @@
     }
 
     for(var oJob in aJobOpenings){
-      jQuery('#table-body-all').append('<tr><td><a class="tab5link" href="#tab5" data-toggle="tab" data="' + aJobOpenings[oJob].Id + '">' + aJobOpenings[oJob].Title.trim() + '</a></td><td>' + aJobOpenings[oJob].LocationName.trim() + '</td><td>' + aJobOpenings[oJob].LocationAddress1.trim() + ' ' + toTitleCase(aJobOpenings[oJob].LocationCity.trim()) + ', ' + aJobOpenings[oJob].LocationState.trim() + '</td><td>' + createShareLinks(aJobOpenings[oJob].ApplyUrl, aJobOpenings[oJob].Title) + '</td></tr>');
+      jQuery('#table-body-all').append('<tr><td><a class="tab5link" href="#tab5" data-toggle="tab" data="' + aJobOpenings[oJob].Id + '">' + aJobOpenings[oJob].Title.trim() + '</a></td><td>' + aJobOpenings[oJob].LocationName.trim() + '</td><td>' + createShareLinks(aJobOpenings[oJob].ApplyUrl, aJobOpenings[oJob].Title) + '</td></tr>');
     }
 
     return true;
@@ -538,7 +536,7 @@
     }
 
     for(var oJob in aJobOpenings){
-      jQuery('#table-body-jobsbyme').append('<tr><td><a class="tab5link" href="#tab5" data-toggle="tab" data="' + aJobOpenings[oJob].Id + '">' + aJobOpenings[oJob].Title.trim() + '</a></td><td>' + aJobOpenings[oJob].LocationName.trim() + '</td><td>' + aJobOpenings[oJob].LocationAddress1.trim() + ' ' + toTitleCase(aJobOpenings[oJob].LocationCity.trim()) + ', ' + aJobOpenings[oJob].LocationState.trim() + '</td><td>' + aJobOpenings[oJob].MilesAway + '</td><td>' + createShareLinks(aJobOpenings[oJob].ApplyUrl, aJobOpenings[oJob].Title) + '</td></tr>');
+      jQuery('#table-body-jobsbyme').append('<tr><td><a class="tab5link" href="#tab5" data-toggle="tab" data="' + aJobOpenings[oJob].Id + '">' + aJobOpenings[oJob].Title.trim() + '</a></td><td>' + aJobOpenings[oJob].LocationName.trim() + '</td><td>' + aJobOpenings[oJob].MilesAway + '</td><td>' + createShareLinks(aJobOpenings[oJob].ApplyUrl, aJobOpenings[oJob].Title) + '</td></tr>');
     }
 
     return true;
@@ -553,7 +551,7 @@
     }
 
     for(var oBusinessUnit in aBusinessUnits){
-      jQuery('#table-body-business').append('<tr><td><a class="tab4link" href="#tab4" data-toggle="tab" data="' + aBusinessUnits[oBusinessUnit].LocationName + '">' + aBusinessUnits[oBusinessUnit].LocationName + '</a></td><td>' + aBusinessUnits[oBusinessUnit].JobOpenings.length + '</td><td>' + aBusinessUnits[oBusinessUnit].Address.LocationAddress1 + ' ' + toTitleCase(aBusinessUnits[oBusinessUnit].Address.LocationCity) + ', ' + aBusinessUnits[oBusinessUnit].Address.LocationState + '</td></tr>');
+      jQuery('#table-body-business').append('<tr><td><a class="tab4link" href="#tab4" data-toggle="tab" data="' + aBusinessUnits[oBusinessUnit].LocationName + '">' + aBusinessUnits[oBusinessUnit].LocationName + '</a></td><td>' + aBusinessUnits[oBusinessUnit].JobOpenings.length + '</td></tr>');
     }
 
     return true;
@@ -568,7 +566,7 @@
     }
 
     for(var oBusinessUnit in aBusinessUnits){
-      jQuery('#table-body-locations').append('<tr><td><a class="tab4link" href="#tab4" data-toggle="tab" data="' + aBusinessUnits[oBusinessUnit].LocationName + '">' + toTitleCase(aBusinessUnits[oBusinessUnit].Address.LocationCity) + ', ' + aBusinessUnits[oBusinessUnit].Address.LocationState + '</a></td><td>' + aBusinessUnits[oBusinessUnit].LocationName + '</td><td>' + aBusinessUnits[oBusinessUnit].Address.LocationAddress1 + ' ' + toTitleCase(aBusinessUnits[oBusinessUnit].Address.LocationCity) + ', ' + aBusinessUnits[oBusinessUnit].Address.LocationState + '</td><td>' + aBusinessUnits[oBusinessUnit].JobOpenings.length + '</td></tr>');
+      jQuery('#table-body-locations').append('<tr><td><a class="tab4link" href="#tab4" data-toggle="tab" data="' + aBusinessUnits[oBusinessUnit].LocationName + '">' + toTitleCase(aBusinessUnits[oBusinessUnit].Address.LocationCity) + ', ' + aBusinessUnits[oBusinessUnit].Address.LocationState + '</a></td><td>' + aBusinessUnits[oBusinessUnit].LocationName + '</td><td>' + aBusinessUnits[oBusinessUnit].JobOpenings.length + '</td></tr>');
     }
 
     return true;
@@ -583,7 +581,7 @@
     }
 
     for(var oJob in aJobOpenings){
-      jQuery('#table-body-categories').append('<tr><td>' + aJobOpenings[oJob].Category.Name + '</td><td><a class="tab5link" href="#tab5" data-toggle="tab" data="' + aJobOpenings[oJob].Id + '">' + aJobOpenings[oJob].Title.trim() + '</a></td><td>' + aJobOpenings[oJob].LocationName.trim() + '</td><td>' + aJobOpenings[oJob].LocationAddress1.trim() + ' ' + toTitleCase(aJobOpenings[oJob].LocationCity.trim()) + ', ' + aJobOpenings[oJob].LocationState.trim() + '</td><td>' + createShareLinks(aJobOpenings[oJob].ApplyUrl, aJobOpenings[oJob].Title) + '</td></tr>');
+      jQuery('#table-body-categories').append('<tr><td>' + aJobOpenings[oJob].Category.Name + '</td><td><a class="tab5link" href="#tab5" data-toggle="tab" data="' + aJobOpenings[oJob].Id + '">' + aJobOpenings[oJob].Title.trim() + '</a></td><td>' + aJobOpenings[oJob].LocationName.trim() + '</td><td>' + createShareLinks(aJobOpenings[oJob].ApplyUrl, aJobOpenings[oJob].Title) + '</td></tr>');
     }
 
     return true;
@@ -597,7 +595,7 @@
     }
 
     for(var oJob in oBusinessUnit.JobOpenings){
-      jQuery('#table-body-business-filter').append('<tr><td><a class="tab5link" href="#tab5" data-toggle="tab" data="' + oBusinessUnit.JobOpenings[oJob].Id + '">' + oBusinessUnit.JobOpenings[oJob].Title.trim() + '</a></td><td>' + oBusinessUnit.JobOpenings[oJob].LocationName.trim() + '</td><td>' + oBusinessUnit.JobOpenings[oJob].LocationAddress1.trim() + ' ' + toTitleCase(oBusinessUnit.JobOpenings[oJob].LocationCity.trim()) + ', ' + oBusinessUnit.JobOpenings[oJob].LocationState.trim() + '</td><td>' + createShareLinks(oBusinessUnit.JobOpenings[oJob].ApplyUrl, oBusinessUnit.JobOpenings[oJob].Title) + '</td></tr>');
+      jQuery('#table-body-business-filter').append('<tr><td><a class="tab5link" href="#tab5" data-toggle="tab" data="' + oBusinessUnit.JobOpenings[oJob].Id + '">' + oBusinessUnit.JobOpenings[oJob].Title.trim() + '</a></td><td>' + oBusinessUnit.JobOpenings[oJob].LocationName.trim() + '</td><td>' + createShareLinks(oBusinessUnit.JobOpenings[oJob].ApplyUrl, oBusinessUnit.JobOpenings[oJob].Title) + '</td></tr>');
     }
 
     return true;
@@ -724,4 +722,3 @@
       }
     });
   }
-})(jQuery);

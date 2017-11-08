@@ -28,13 +28,12 @@ get_header('pm-seasonal'); ?>
 			<h2 id="pagetitle"></h2>
 
 			<div class="tab-content">
-				<div class="tab-pane" id="tab1">
+				<div class="tab-pane active" id="tab1">
 					<table class="sortable">
 						<thead>
 							<tr>
 								<th>Job Title</th>
 								<th>Department</th>
-								<th>Address</th>
 								<th>Share</th>
 							</tr>
 						</thead>
@@ -52,7 +51,6 @@ get_header('pm-seasonal'); ?>
 							<tr>
 								<th>Department</th>
 								<th>Open Positions</th>
-								<th>Address</th>
 							</tr>
 						</thead>
 						<tbody id="table-body-business">
@@ -63,13 +61,12 @@ get_header('pm-seasonal'); ?>
 					</table>
 				</div>
 
-				<div class="tab-pane active" id="tab3">
+				<div class="tab-pane" id="tab3">
 					<table class="jobs-by-business sortable">
 						<thead >
 							<tr>
 								<th>Location</th>
 								<th>Department</th>
-								<th>Address</th>
 								<th>Open Positions</th>
 							</tr>
 						</thead>
@@ -87,7 +84,6 @@ get_header('pm-seasonal'); ?>
 							<tr>
 								<th>Job Title</th>
 								<th>Department</th>
-								<th>Location</th>
 								<th>Share</th>
 							</tr>
 						</thead>
@@ -105,7 +101,6 @@ get_header('pm-seasonal'); ?>
 							<tr>
 								<th>Job Title</th>
 								<th>Department</th>
-								<th>Location</th>
 								<th>Share</th>
 								<th>Apply</th>
 							</tr>
@@ -117,7 +112,6 @@ get_header('pm-seasonal'); ?>
 							<tr id="detail-row">
 								<td class="title"></td>
 								<td id="business"></td>
-								<td id="location"></td>
 								<td id="share"></td>
 								<td><a class="applyurl" href="#" >Apply</a></td>
 							</tr>
@@ -144,7 +138,6 @@ get_header('pm-seasonal'); ?>
 							<tr>
 								<th>Job Title</th>
 								<th>Department</th>
-								<th>Address</th>
 								<th>Miles Away</th>
 								<th>Share</th>
 							</tr>
@@ -164,7 +157,6 @@ get_header('pm-seasonal'); ?>
 								<th>Category</th>
 								<th>Job Title</th>
 								<th>Department</th>
-								<th>Location</th>
 								<th>Share</th>
 							</tr>
 						</thead>
