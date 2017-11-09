@@ -12,9 +12,16 @@
 				$row = $flexslider[$i]; ?>
 					<?php if ( strcmp( $row['video_or_image'], "video" ) === 0 && $row['video'] ): ?>
 						<li>
-							<div class="iframe-wrapper">
-								<iframe src="<?php echo $row['video']; ?>" webkitallowfullscreen mozallowfullscreen allowfullscreen="true"
-								        frameborder="0"></iframe>
+							<div class="iframe-wrapper <?php echo $row['mobile_video']?'yes-mobile':'no-mobile';?>">
+                                <?php if($row['link']):?>
+								    <a href="<?php echo $row['link']; ?>" <?php if ( $row['target'] ):echo 'target="_blank"'; endif; ?>></a>
+								<?php endif;?>
+									<iframe class="desktop" src="<?php echo $row['video']; ?>" webkitallowfullscreen mozallowfullscreen allowfullscreen="true"
+											frameborder="0"></iframe>
+									<?php if($row['mobile_video']):?>
+										<iframe class="mobile" src="<?php echo $row['mobile_video']; ?>" webkitallowfullscreen mozallowfullscreen allowfullscreen="true"
+												frameborder="0"></iframe>
+									<?php endif;?>
 							</div><!--.iframe-wrapper-->
 						</li>
 					<?php elseif ( strcmp( $row['video_or_image'], "image" ) === 0 && $row['image'] ): ?>
