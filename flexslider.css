@@ -83,16 +83,19 @@ html[xmlns] .flexslider .slides {
 .flexslider .slides {
     zoom: 1;
 }
+.flexslider .slides .iframe-wrapper,
 .flexslider .slides .image-wrapper {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+.flexslider .slides .iframe-wrapper img,
 .flexslider .slides .image-wrapper img {
     height: auto;
     min-height: 300px;
     opacity: 0;
 }
+.flexslider .slides .iframe-wrapper img.lazy,
 .flexslider .slides .image-wrapper img.lazy {
     height: 0;
 }
@@ -119,7 +122,7 @@ html[xmlns] .flexslider .slides {
     z-index: 5;
 }
 .flexslider .slides .iframe-wrapper.yes-mobile {
-    padding: 104.375% 0 0 0;
+    padding: 0;
 }
 .flexslider .slides .iframe-wrapper.yes-mobile iframe.desktop,
 .flexslider .slides .image-wrapper.yes-mobile img.desktop {
@@ -133,10 +136,11 @@ html[xmlns] .flexslider .slides {
     .flexslider .slides .image-wrapper.yes-mobile img.desktop {
         display: block;
     }
-    .flexslider .slides .iframe-wrapper.yes-mobile iframe.mobile,
+    .flexslider .slides .iframe-wrapper.yes-mobile img.mobile,
     .flexslider .slides .image-wrapper.yes-mobile img.mobile {
         display: none;
     }
+    .flexslider .slides .iframe-wrapper,
     .flexslider .slides .image-wrapper {
         background-image: none !important;
     }
