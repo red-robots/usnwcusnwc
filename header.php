@@ -66,6 +66,18 @@ src="https://www.facebook.com/tr?id=236370623380911&ev=PageView&noscript=1"
 /></noscript>
 <!-- DO NOT MODIFY -->
 <!-- End Facebook Pixel Code -->
+<script type="application/ld+json">
+{ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "U.S. National Whitewater Center",
+  "url" : "http://www.usnwc.org",
+  "sameAs" : [ "https://www.linkedin.com/company/220848/" ,
+    "https://www.facebook.com/usnwc/",
+    "https://www.youtube.com/user/theusnwc/",
+    "https://www.instagram.com/usnwc/",
+	“https://vimeo.com/usnwc”]
+}
+</script>
 </head>
 
 <body>
