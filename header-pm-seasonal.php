@@ -79,6 +79,18 @@ wp_enqueue_script( 'bootstrap-sortable','http://usnwc.org/wp-content/themes/usnw
 wp_enqueue_script( 'lodash','http://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/lodash.underscore.min.js',array('jquery'),'20171030',true);?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <!--end pm seasonal-->
+<script type="application/ld+json">
+{ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "U.S. National Whitewater Center",
+  "url" : "http://www.usnwc.org",
+  "sameAs" : [ "https://www.linkedin.com/company/220848/" ,
+    "https://www.facebook.com/usnwc/",
+    "https://www.youtube.com/user/theusnwc/",
+    "https://www.instagram.com/usnwc/",
+	“https://vimeo.com/usnwc”]
+}
+</script>
 </head>
 
 <body>
