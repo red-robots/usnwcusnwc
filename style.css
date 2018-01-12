@@ -789,6 +789,9 @@ nav.mobile .mobile-sub-menu{
 .false.header{
 	width: 100%;
 }
+.false.header img.false.img {
+	max-width: 360px;
+}
 nav.page.breadcrumbs{
 	display: block;
 	position: static;
