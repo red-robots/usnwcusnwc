@@ -659,6 +659,7 @@ header.page img.showsearch {
 header.page img.logo {
 	width: auto;
 	height: auto;
+	max-width: 360px;
 	margin: 0 0 0 20px;
 	display: inline-block;
 }

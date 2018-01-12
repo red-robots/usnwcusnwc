@@ -108,16 +108,15 @@ if(is_category()){
 <nav class="mobile">
 </nav>
 <div class="page container">
-<div class="false header"><img class="false img" src="/wp-content/uploads/2015/06/falselogo.jpg"></div>
+<div class="false header"><img class="false img" src="<?php echo get_template_directory_uri()."/images/falselogo.png";?>"></div>
 <header class="page">
-	<!--<?php wp_title( '|', true, 'right' );bloginfo( 'name' );?>-->
 	<gcse:search></gcse:search>
-	<img class="showsearch" src="/wp-content/uploads/2015/09/Search.png">
-	<img class="showmenu hamburger" src="http://usnwc.org/wp-content/uploads/2015/05/hamburger-75x75.png">
+	<img class="showsearch" src="<?php echo get_template_directory_uri()."/images/Search.png";?>">
+	<img class="showmenu hamburger" src="<?php echo get_template_directory_uri()."/images/hamburger-75x75.png";?>">
     <nav>
    		<?php wp_nav_menu( array( 'theme_location' => 'header', 'container' => '' ) ); ?>
 	</nav>
-    <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="logo" src="http://usnwc.org/wp-content/uploads/2015/06/logo-main.png" alt="US National Whitewater Center Logo"></a>
+    <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="logo" src="<?php echo get_template_directory_uri()."/images/web_logo.png";?>" alt="U.S. National Whitewater Center Logo"></a>
 </header>
 <?php if(!is_home()) { ?>
 <nav class="page breadcrumbs">
