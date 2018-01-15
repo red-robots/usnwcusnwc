@@ -105,10 +105,14 @@ function display_loop_article($args){
    						<?php }
    						else */
    						
-   						if($img_url){ 
+   						if($img_url){
                             if ( in_array( 'yes', get_field('event_complete') ) ) { ?>
                                 <figure class="featured_image hoverable" style="background-image:url(<?php echo $img_url;?>);">
-                                    <img src="/wp-content/uploads/2016/12/EventComplete.png">
+                                    <img src="/wp-content/uploads/2016/12/EventComplete.png" alt="Event Complete">
+                                </figure>
+                            <?php } elseif ( in_array( 'yes', get_field('sold_out') ) ) { ?>
+                                <figure class="featured_image hoverable" style="background-image:url(<?php echo $img_url;?>);">
+                                    <img src="<?php echo get_template_directory_uri()."/images/Sold_Out_Tile.png";?>" alt="Sold Out Tile">
                                 </figure>
                             <?php } else {?> 
                                 <figure class="featured_image">
