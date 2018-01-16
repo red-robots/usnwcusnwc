@@ -153,8 +153,8 @@ global $sidebar;
 		<header>
 			<h1>Map</h1>  
     	</header>
-		<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/d/embed?mid=zSJHiUI39_y0.kncn426M5Spw"></iframe><br />
-        <p><a href="https://www.google.com/maps/d/edit?mid=zSJHiUI39_y0.kncn426M5Spw&usp=sharing" style="color:#0000FF;text-align:right" target="_blank">View accomodations</a> in a larger map</p>
+		<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/d/u/0/embed?mid=1eEmoWNEfw3TjvzZRr2dXalm0MfPES76l"></iframe><br />
+        <p><a href="https://www.google.com/maps/d/u/0/embed?mid=1eEmoWNEfw3TjvzZRr2dXalm0MfPES76l" style="color:#0000FF;text-align:right" target="_blank">View accomodations</a> in a larger map</p>
 	</section><!-- widget -->
 <?php } ?> 
 
