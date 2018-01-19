@@ -21,7 +21,7 @@
 		</ul>
 	</div>
 	<div class="row search">
-		<gcse:search></gcse:search>
+		<?php get_search_form();?>
 	</div>
 	<div class="row description">
 		<p><span class="break-mobile">U.S. National Whitewater Center</span><span class="noshow-mobile"> | </span><span class="break-mobile">5000 Whitewater Center Parkway | Charlotte, NC 28214</span><span class="noshow-mobile"> | </span><span class="break-mobile">704.391.3900 | info@usnwc.org</span></p>

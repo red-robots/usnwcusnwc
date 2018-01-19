@@ -97,8 +97,8 @@ if(is_category()){
 <div class="page container">
 <div class="false header"><img class="false img" src="<?php echo get_template_directory_uri()."/images/falselogo.png";?>"></div>
 <header class="page">
-	<gcse:search></gcse:search>
-	<img class="showsearch" src="<?php echo get_template_directory_uri()."/images/Search.png";?>">
+	<?php get_search_form();?>
+	<img class="showsearch" src="<?php echo get_template_directory_uri()."/images/search.png";?>">
 	<img class="showmenu hamburger" src="<?php echo get_template_directory_uri()."/images/hamburger-75x75.png";?>">
     <nav>
    		<?php wp_nav_menu( array( 'theme_location' => 'header', 'container' => '' ) ); ?>

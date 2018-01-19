@@ -4,8 +4,7 @@
  * @since   1.0
  * @alter   2.1.3
 */
-header("Location: http://usnwc.org/");
-exit;
+
 get_header('search'); ?>
 <div id="grid">
 
