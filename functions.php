@@ -549,6 +549,4 @@ if(!function_exists('return_100')){
 	}
 }
 add_filter( 'jpeg_quality', 'return_100' );
-
-add_filter('show_admin_bar', '__return_false');
 ?>
