@@ -1,6 +1,6 @@
  <?php
 /*
- * Template Name: Top Level
+ * Template Name: Top Level w/ Content
 */
 
 get_header('page'); ?>
@@ -8,7 +8,14 @@ get_header('page'); ?>
 
  <?php get_sidebar("banner");?>
 <header class="post"><h1><?php the_title(); ?></h1></header>
-<?php
+<?php if(have_posts()){
+	the_post();
+    if(get_the_content()){ ?>
+        <section class="post <?php echo $post->post_name; ?>">
+            <?php the_content(); ?>
+        </section>
+    <?php }
+} 
 /*
  * The call to get_template_part gets the template function display_loop_tile
  * which queries the posts based on the supplied args

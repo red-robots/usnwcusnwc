@@ -244,6 +244,14 @@ global $sidebar;
         	<?php the_field('mission_statement'); ?>
     	</article>
 	<?php } ?> 
+	<article class="post sidebar video">
+		<header>
+			<h1>Whitewater Story</h1>
+		</header>
+		<div class="iframe-dynamic">
+			<iframe src="https://player.vimeo.com/video/232487883?title=0&byline=0&portrait=0" width="640" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div><!--.iframe-dynamic-->
+	</article>
 <?php }?>
 <?php if(is_page("activity-passes")){
 	if($sidebar==="top"){?>
