@@ -244,6 +244,7 @@ global $sidebar;
         	<?php the_field('mission_statement'); ?>
     	</article>
 	<?php } ?> 
+	<a name="video"></a>
 	<article class="post sidebar video">
 		<header>
 			<h1>Whitewater Story</h1>
