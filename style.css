@@ -544,6 +544,68 @@ a.register-button-link:hover{
 .register-button a:hover {
 	text-decoration: none;
 }
+/*///////////////////// Corporate Groups page ////////////////////////////////*/
+article.post.corporate-groups {
+
+}
+article.post.corporate-groups .section-wrapper{
+
+}
+article.post.corporate-groups .section-wrapper .section{
+	padding: 20px 0;
+	border-top: 1px solid #c2c2c2;
+}
+article.post.corporate-groups .section-wrapper .section header {
+	margin: 0 0 1.5em 0;
+}
+article.post.corporate-groups .section-wrapper .section .copy{
+
+}
+article.post.corporate-groups .section-wrapper .section .list{
+	float: left;
+}
+article.post.corporate-groups .section-wrapper .section .icon-wrapper {
+	float: left;
+}
+article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon{
+	text-align: center;
+	display: block;
+	float: left;
+	margin: 0 0 1.5em 0;
+}
+article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon img{
+	display: block;
+	width: 60%;
+	margin: 1% auto;
+	padding: 0;
+}
+article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon header{
+    width: 98%;
+    height: auto;
+    background-color: #fff;
+    margin: 1%;
+    padding: 0;
+
+}
+article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon header h2{
+    color: #333;
+    font-size: 1em;
+    letter-spacing: .05em;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0.5em 1em;
+    font-family: franklin_gothic_fs_cdregular, Arial, Helvetica, sans-serif;
+}
+article.post.corporate-groups a.corporate-button {
+	margin: 1.5em 0;
+	font-weight: 700;
+	font-size: 18px;
+	float: left;
+	color: white;
+	padding: 10px 20px;
+	background-color: #c10435;
+	text-transform: uppercase;
+}
 /*///////////////////styling for buy buttons////////////////////////*/
 .buy-button-wrapper {
     text-align: center;
@@ -646,7 +708,7 @@ header.page h1 {
 	font-size: 16px;
 	border: 1px solid lightgrey;
 }
-header.page #searchform {
+header.page #searchform, header.page #___gcse_0 {
 	display: none;
 }
 header.page img.showsearch {
@@ -2034,7 +2096,7 @@ div.trailer .fb-post, div.trailer .fb-post * {
 	header.page nav {
 		display: none;
 	}
-	header.page #searchform {
+	header.page #___gcse_0, header.page #searchform {
 		display: none;
 	}
 	footer.page div.row.search {

@@ -11,7 +11,7 @@ get_header('page'); ?>
 <?php if(have_posts()){
 	the_post();
     if(get_the_content()){ ?>
-        <section class="post <?php echo $post->post_name; ?>">
+        <section class="post top-level-content <?php echo $post->post_name; ?>">
             <?php the_content(); ?>
         </section>
     <?php }
