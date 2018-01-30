@@ -1,6 +1,6 @@
  <?php
 /*
- * Template Name: Groups
+ * Template Name: Corporate Groups
 */
 get_header('page'); ?>
 <?php get_sidebar("banner");?>
@@ -22,6 +22,7 @@ get_header('page'); ?>
 					$button_link = $section['button_link'];
 					$button_text = $section['button_text'];
 					$flexslider = $section['slider'];?>
+					<a name="<?php echo sanitize_title_with_dashes($title);?>"></a>
 					<div class="section">
 						<?php if($title):?>
 							<header><h2><?php echo $title;?></h2></header>
@@ -42,17 +43,25 @@ get_header('page'); ?>
 								<?php foreach($icons as $icon):
 									$image = $icon['image'];
 									$text = $icon['text'];
+									$link = $icon['link'];
 									if($image):?>
-										<div class="icon">
-											<img src=<?php echo $image['sizes']['medium'];?> alt="<?php echo $image['alt'];?>">
-											<?php if($text):?>
-												<header>
-													<h3><?php echo $text;?></h3>
-												</header>
-											<?php endif;?>
-										</div><!--.icon-->
+										<?php if($link):?>
+											<a href="<?php echo $link;?>">
+										<?php endif;?>
+											<div class="icon">
+												<img src=<?php echo $image['sizes']['medium'];?> alt="<?php echo $image['alt'];?>">
+												<?php if($text):?>
+													<header>
+														<h3><?php echo $text;?></h3>
+													</header>
+												<?php endif;?>
+											</div><!--.icon-->
+										<?php if($link):?>
+											</a>
+										<?php endif;?>
 									<?php endif;
 								endforeach;?>
+								<div class="clearfix"></div>
 							</div><!--.icon-wrapper-->
 						<?php endif;
 						if($button_link&&$button_text):?>

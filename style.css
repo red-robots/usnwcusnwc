@@ -558,20 +558,24 @@ article.post.corporate-groups .section-wrapper .section{
 article.post.corporate-groups .section-wrapper .section header {
 	margin: 0 0 1.5em 0;
 }
+article.post.corporate-groups .section-wrapper .section header h2 {
+	text-transform: uppercase;
+}
 article.post.corporate-groups .section-wrapper .section .copy{
 
 }
 article.post.corporate-groups .section-wrapper .section .list{
 	float: left;
+	margin: 0 60px 0 0;
 }
 article.post.corporate-groups .section-wrapper .section .icon-wrapper {
 	float: left;
+	margin: 0 30px 1.5em 0;
 }
 article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon{
 	text-align: center;
 	display: block;
 	float: left;
-	margin: 0 0 1.5em 0;
 }
 article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon img{
 	display: block;
@@ -580,21 +584,21 @@ article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon img{
 	padding: 0;
 }
 article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon header{
-    width: 98%;
-    height: auto;
-    background-color: #fff;
-    margin: 1%;
-    padding: 0;
+	width: 98%;
+	height: auto;
+	background-color: #fff;
+	margin: 1%;
+	padding: 0;
 
 }
-article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon header h2{
-    color: #333;
-    font-size: 1em;
-    letter-spacing: .05em;
-    text-transform: capitalize;
-    margin: 0;
-    padding: 0.5em 1em;
-    font-family: franklin_gothic_fs_cdregular, Arial, Helvetica, sans-serif;
+article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon header h3{
+	color: #333;
+	font-size: 1em;
+	letter-spacing: .05em;
+	text-transform: capitalize;
+	margin: 0;
+	padding: 0.5em 1em;
+	font-family: franklin_gothic_fs_cdregular, Arial, Helvetica, sans-serif;
 }
 article.post.corporate-groups a.corporate-button {
 	margin: 1.5em 0;
@@ -605,6 +609,7 @@ article.post.corporate-groups a.corporate-button {
 	padding: 10px 20px;
 	background-color: #c10435;
 	text-transform: uppercase;
+	display: inline-block;
 }
 /*///////////////////styling for buy buttons////////////////////////*/
 .buy-button-wrapper {
@@ -1848,6 +1853,74 @@ div.trailer .fb-post, div.trailer .fb-post * {
 	/* /ac */
     /* hide slideshow nav on mobile*/
 
+	/*///////////////////// Corporate Groups page ////////////////////////////////*/
+	article.post.corporate-groups {
+
+	}
+	article.post.corporate-groups .section-wrapper{
+
+	}
+	article.post.corporate-groups .section-wrapper .section{
+		padding: 20px 0;
+		border-top: 1px solid #c2c2c2;
+	}
+	article.post.corporate-groups .section-wrapper .section header {
+		margin: 0 0 1.5em 0;
+	}
+	article.post.corporate-groups .section-wrapper .section header h2 {
+		text-transform: uppercase;
+	}
+	article.post.corporate-groups .section-wrapper .section .copy{
+
+	}
+	article.post.corporate-groups .section-wrapper .section .list{
+		margin: 0 0 1.5em 0;
+		float: none;
+	}
+	article.post.corporate-groups .section-wrapper .section .icon-wrapper {
+		margin: 0;
+		float: none;
+	}
+	article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon{
+		text-align: center;
+		display: block;
+		float: left;
+	}
+	article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon img{
+		display: block;
+		width: 60%;
+		margin: 1% auto;
+		padding: 0;
+	}
+	article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon header{
+		width: 98%;
+		height: auto;
+		background-color: #fff;
+		margin: 1%;
+		padding: 0;
+
+	}
+	article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon header h3{
+		color: #333;
+		font-size: 1em;
+		letter-spacing: .05em;
+		text-transform: capitalize;
+		margin: 0;
+		padding: 0.5em 1em;
+		font-family: franklin_gothic_fs_cdregular, Arial, Helvetica, sans-serif;
+	}
+	article.post.corporate-groups a.corporate-button {
+		margin: 1.5em 0;
+		font-weight: 700;
+		font-size: 18px;
+		color: white;
+		padding: 10px 20px;
+		background-color: #c10435;
+		text-transform: uppercase;
+		float: none;
+		display: inline-block;
+	}
+	
 
 }
 /*/////////////////////////////Horizontal Small Screens/////////////////////////////*/
