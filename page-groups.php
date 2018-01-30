@@ -46,7 +46,7 @@ get_header('page'); ?>
 									$link = $icon['link'];
 									if($image):?>
 										<?php if($link):?>
-											<a href="<?php echo $link;?>">
+											<a href="<?php echo $link;?>" target="_blank">
 										<?php endif;?>
 											<div class="icon">
 												<img src=<?php echo $image['sizes']['medium'];?> alt="<?php echo $image['alt'];?>">
