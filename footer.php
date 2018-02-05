@@ -21,7 +21,9 @@
 		</ul>
 	</div>
 	<div class="row search">
+		<?php echo do_shortcode('[gravityform id="13" title="false"]');?>
 		<?php get_search_form();?>
+		<div class="clearfix"></div>
 	</div>
 	<div class="row description">
 		<p><span class="break-mobile">U.S. National Whitewater Center</span><span class="noshow-mobile"> | </span><span class="break-mobile">5000 Whitewater Center Parkway | Charlotte, NC 28214</span><span class="noshow-mobile"> | </span><span class="break-mobile">704.391.3900 | info@usnwc.org</span></p>

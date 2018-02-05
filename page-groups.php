@@ -37,35 +37,10 @@ get_header('page'); ?>
 								<?php echo $list;?>
 							</div><!--.list-->
 						<?php endif;
-						if($icons):?>
-							<div class="clearfix"></div>
-							<div class="icon-wrapper">
-								<?php foreach($icons as $icon):
-									$image = $icon['image'];
-									$text = $icon['text'];
-									$link = $icon['link'];
-									if($image):?>
-										<?php if($link):?>
-											<a href="<?php echo $link;?>" target="_blank">
-										<?php endif;?>
-											<div class="icon">
-												<img src=<?php echo $image['sizes']['medium'];?> alt="<?php echo $image['alt'];?>">
-												<?php if($text):?>
-													<header>
-														<h3><?php echo $text;?></h3>
-													</header>
-												<?php endif;?>
-											</div><!--.icon-->
-										<?php if($link):?>
-											</a>
-										<?php endif;?>
-									<?php endif;
-								endforeach;?>
-								<div class="clearfix"></div>
-							</div><!--.icon-wrapper-->
-						<?php endif;
 						if($button_link&&$button_text):?>
-							<a class="corporate-button" href="<?php echo $button_link;?>"><?php echo $button_text;?></a>
+							<div class="button-wrapper">
+								<a class="corporate-button" href="<?php echo $button_link;?>"><?php echo $button_text;?></a>
+							</div>
 						<?php endif;?>
 						<div class="clearfix"></div>
 						<?php if($flexslider):?>
