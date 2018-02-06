@@ -1,19 +1,19 @@
  <?php
 /*
- * Template Name: Corporate Groups
+ * Template Name: Groups
 */
 get_header('page'); ?>
 <?php get_sidebar("banner");?>
 <?php if(have_posts()){
    	the_post(); ?>
-	<article class="post <?php echo $post->post_name; ?>">
+	<article class="post groups <?php echo $post->post_name; ?>">
 	  	<header>
     	   	<h1><?php the_title(); ?></h1>
   		</header>
     	<?php the_content(); ?>
 		<?php $sections = get_field("sections");
 		if($sections):?>
-			<div class="section-wrapper">
+			<div class="section-wrapper <?php if(!get_the_content()) echo "no-bar";?>">
 				<?php foreach($sections as $section):
 					$title = $section['title'];
 					$copy = $section['copy'];
@@ -38,8 +38,8 @@ get_header('page'); ?>
 							</div><!--.list-->
 						<?php endif;
 						if($button_link&&$button_text):?>
-							<div class="button-wrapper">
-								<a class="corporate-button" href="<?php echo $button_link;?>"><?php echo $button_text;?></a>
+							<div class="<?php if(!get_the_content()): echo "button-wrapper-center"; else: echo "button-wrapper"; endif;?>">
+								<a class="button" href="<?php echo $button_link;?>"><?php echo $button_text;?></a>
 							</div>
 						<?php endif;?>
 						<div class="clearfix"></div>

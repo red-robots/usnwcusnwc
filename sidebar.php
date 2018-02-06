@@ -133,7 +133,8 @@ global $sidebar;
 			<a href="http://www.teva.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Teva.png" alt="teva logo"></div></a>
 			<a href="https://www.thenorthface.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/TheNorthFace_logo.png" alt="the north face logo"></div></a>
 			<a href="http://www.cascadedesigns.com/Therm-a-Rest" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Thermarest.png" alt="thermarest logo"></div></a>
-			<a href="http://www.toadandco.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/ToadCo_Logo.png" alt="toad&co logo"></div></a>
+			<a href="http://www.toadandco.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/ToadCo_Logo.png" alt="toad&amp;co logo"></div></a>
+			<a href="https://www.altrarunning.com/" target="_blank"><div class="icon"><img src="http://usnwc.org/wp-content/uploads/2018/02/Altra_Logo.png" alt="altra logo"></div></a>
 		</div>
 	</section>
 <?php }?>

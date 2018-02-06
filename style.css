@@ -545,50 +545,50 @@ a.register-button-link:hover{
 	text-decoration: none;
 }
 /*///////////////////// Corporate Groups page ////////////////////////////////*/
-article.post.corporate-groups {
+article.post.groups {
 
 }
-article.post.corporate-groups .section-wrapper{
-
+article.post.groups .section-wrapper.no-bar .section:nth-child(2){
+	border-top: none;
 }
-article.post.corporate-groups .section-wrapper .section{
+article.post.groups .section-wrapper .section{
 	padding: 20px 0;
 	border-top: 1px solid #c2c2c2;
 }
-article.post.corporate-groups .section-wrapper .section header {
+article.post.groups .section-wrapper .section header {
 	margin: 0 0 1.5em 0;
 }
-article.post.corporate-groups .section-wrapper .section header h2 {
+article.post.groups .section-wrapper .section header h2 {
 	text-transform: uppercase;
 }
-article.post.corporate-groups .section-wrapper .section .copy{
+article.post.groups .section-wrapper .section .copy{
 
 }
-article.post.corporate-groups .section-wrapper .section .list{
+article.post.groups .section-wrapper .section .list{
 	margin: 0 60px 0 0;
 }
-article.post.corporate-groups .section-wrapper .section .list ul{
+article.post.groups .section-wrapper .section .list ul{
 	margin-left: 0;
 }
-article.post.corporate-groups .section-wrapper .section .list ul li{
+article.post.groups .section-wrapper .section .list ul li{
 	margin-left: 1.2em;
 }
-article.post.corporate-groups .section-wrapper .section .icon-wrapper {
+article.post.groups .section-wrapper .section .icon-wrapper {
 	float: left;
 	margin: 0 30px 1.5em 0;
 }
-article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon{
+article.post.groups .section-wrapper .section .icon-wrapper .icon{
 	text-align: center;
 	display: block;
 	float: left;
 }
-article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon img{
+article.post.groups .section-wrapper .section .icon-wrapper .icon img{
 	display: block;
 	width: 60%;
 	margin: 1% auto;
 	padding: 0;
 }
-article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon header{
+article.post.groups .section-wrapper .section .icon-wrapper .icon header{
 	width: 98%;
 	height: auto;
 	background-color: #fff;
@@ -596,7 +596,7 @@ article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon head
 	padding: 0;
 
 }
-article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon header h3{
+article.post.groups .section-wrapper .section .icon-wrapper .icon header h3{
 	color: #333;
 	font-size: 1em;
 	letter-spacing: .05em;
@@ -605,14 +605,14 @@ article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon head
 	padding: 0.5em 1em;
 	font-family: franklin_gothic_fs_cdregular, Arial, Helvetica, sans-serif;
 }
-article.post.corporate-groups .button-wrapper-center {
+article.post.groups .button-wrapper-center {
 	text-align: center;
 	margin-bottom: 1.5em;
 }
-article.post.corporate-groups .button-wrapper {
+article.post.groups .button-wrapper {
 	margin: 0 0 1.5em 0;
 }
-article.post.corporate-groups a.corporate-button {
+article.post.groups a.corporate-button, article.post.groups a.button {
 	margin: 0;
 	font-weight: 700;
 	font-size: 18px;
@@ -621,6 +621,10 @@ article.post.corporate-groups a.corporate-button {
 	background-color: #c10435;
 	text-transform: uppercase;
 	display: inline-block;
+	text-decoration: none;
+}
+article.post.groups a.corporate-button:hover, article.post.groups a.button:hover {
+	text-decoration: none;
 }
 /*///////////////////styling for buy buttons////////////////////////*/
 .buy-button-wrapper {
@@ -976,6 +980,8 @@ footer.page div.row.search {
 }
 footer.page div.row.search #searchform {
 	float: left;
+	margin: 0 0 0 40px;
+	padding: 0;
 }
 footer.page div.row.search #gform_wrapper_13 {
 	float: left;
@@ -1812,7 +1818,10 @@ div.trailer .fb-post, div.trailer .fb-post * {
 	footer.page nav {
 		display: none;
 	}
-	footer.page div.row.search {
+	footer.page div.row.search #gform_wrapper_13 {
+		width: 100%;
+	}
+	footer.page div.row.search #searchform {
 		display: none;
 	}
 	.activity-grid td:last-child{
@@ -1914,44 +1923,44 @@ div.trailer .fb-post, div.trailer .fb-post * {
     /* hide slideshow nav on mobile*/
 
 	/*///////////////////// Corporate Groups page ////////////////////////////////*/
-	article.post.corporate-groups {
+	article.post.groups {
 
 	}
-	article.post.corporate-groups .section-wrapper{
+	article.post.groups .section-wrapper{
 
 	}
-	article.post.corporate-groups .section-wrapper .section{
+	article.post.groups .section-wrapper .section{
 		padding: 20px 0;
 		border-top: 1px solid #c2c2c2;
 	}
-	article.post.corporate-groups .section-wrapper .section header {
+	article.post.groups .section-wrapper .section header {
 		margin: 0 0 1.5em 0;
 	}
-	article.post.corporate-groups .section-wrapper .section header h2 {
+	article.post.groups .section-wrapper .section header h2 {
 		text-transform: uppercase;
 	}
-	article.post.corporate-groups .section-wrapper .section .copy{
+	article.post.groups .section-wrapper .section .copy{
 
 	}
-	article.post.corporate-groups .section-wrapper .section .list{
+	article.post.groups .section-wrapper .section .list{
 		margin: 0 0 1.5em 0;
 	}
-	article.post.corporate-groups .section-wrapper .section .icon-wrapper {
+	article.post.groups .section-wrapper .section .icon-wrapper {
 		margin: 0;
 		float: none;
 	}
-	article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon{
+	article.post.groups .section-wrapper .section .icon-wrapper .icon{
 		text-align: center;
 		display: block;
 		float: left;
 	}
-	article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon img{
+	article.post.groups .section-wrapper .section .icon-wrapper .icon img{
 		display: block;
 		width: 60%;
 		margin: 1% auto;
 		padding: 0;
 	}
-	article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon header{
+	article.post.groups .section-wrapper .section .icon-wrapper .icon header{
 		width: 98%;
 		height: auto;
 		background-color: #fff;
@@ -1959,7 +1968,7 @@ div.trailer .fb-post, div.trailer .fb-post * {
 		padding: 0;
 
 	}
-	article.post.corporate-groups .section-wrapper .section .icon-wrapper .icon header h3{
+	article.post.groups .section-wrapper .section .icon-wrapper .icon header h3{
 		color: #333;
 		font-size: 1em;
 		letter-spacing: .05em;
@@ -1968,7 +1977,7 @@ div.trailer .fb-post, div.trailer .fb-post * {
 		padding: 0.5em 1em;
 		font-family: franklin_gothic_fs_cdregular, Arial, Helvetica, sans-serif;
 	}
-	article.post.corporate-groups a.corporate-button {
+	article.post.groups a.corporate-button, .article.post.groups a.button {
 		margin: 0;
 		font-weight: 700;
 		font-size: 18px;
