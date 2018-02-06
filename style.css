@@ -697,6 +697,9 @@ header.page {
 	top: 0;
 	left: 0;
 }
+.fa-google {
+	display: none !important;
+}
 header.page h1 {
 	text-indent: -99999px;
 	color: black;
