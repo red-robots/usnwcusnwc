@@ -605,14 +605,14 @@ article.post.groups .section-wrapper .section .icon-wrapper .icon header h3{
 	padding: 0.5em 1em;
 	font-family: franklin_gothic_fs_cdregular, Arial, Helvetica, sans-serif;
 }
-article.post.groups .button-wrapper-center {
+.button-wrapper-center {
 	text-align: center;
 	margin-bottom: 1.5em;
 }
 article.post.groups .button-wrapper {
 	margin: 0 0 1.5em 0;
 }
-article.post.groups a.corporate-button, article.post.groups a.button {
+a.corporate-button, article.post.groups a.button {
 	margin: 0;
 	font-weight: 700;
 	font-size: 18px;
@@ -623,7 +623,7 @@ article.post.groups a.corporate-button, article.post.groups a.button {
 	display: inline-block;
 	text-decoration: none;
 }
-article.post.groups a.corporate-button:hover, article.post.groups a.button:hover {
+a.corporate-button:hover, article.post.groups a.button:hover {
 	text-decoration: none;
 }
 /*///////////////////styling for buy buttons////////////////////////*/
@@ -911,6 +911,16 @@ nav.page.breadcrumbs a {
 	display: block;
 	position: static;
 	width: 100%;
+}
+.tribe-events-calendar div[id*=tribe-events-event-]{
+	border-top: 1px solid #e7e7e7;
+	margin: 0 5%;
+}
+.tribe-events-calendar div[id*=tribe-events-event-]:nth-child(2) {
+	border-top: none;
+}
+#tribe-events .tribe-events-button, #tribe-events .tribe-events-button:hover, #tribe_events_filters_wrapper input[type=submit], .tribe-events-button, .tribe-events-button.tribe-active:hover, .tribe-events-button.tribe-inactive, .tribe-events-button:hover, .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-], .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-]>a {
+	background-color: #c10435;
 }
 .hidetitle {
 	display: none;
@@ -1980,7 +1990,7 @@ div.trailer .fb-post, div.trailer .fb-post * {
 		padding: 0.5em 1em;
 		font-family: franklin_gothic_fs_cdregular, Arial, Helvetica, sans-serif;
 	}
-	article.post.groups a.corporate-button, .article.post.groups a.button {
+	a.corporate-button, .article.post.groups a.button {
 		margin: 0;
 		font-weight: 700;
 		font-size: 18px;
