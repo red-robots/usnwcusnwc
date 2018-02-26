@@ -7,7 +7,9 @@ var current_page_width = 0;
 jQuery.noConflict();
 
 jQuery(document).ready(function ($) {
-  
+    $('.tribe-search-x').click(function(){
+        $('#tribe-bar-search').val('');
+    });
     function anchor_scroll_capsule(e) {
         if (!e.sudo) {
             if (e.target.href) {

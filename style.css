@@ -922,6 +922,18 @@ nav.page.breadcrumbs a {
 #tribe-events .tribe-events-button, #tribe-events .tribe-events-button:hover, #tribe_events_filters_wrapper input[type=submit], .tribe-events-button, .tribe-events-button.tribe-active:hover, .tribe-events-button.tribe-inactive, .tribe-events-button:hover, .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-], .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-]>a {
 	background-color: #c10435;
 }
+.tribe-search-x {
+    content: "X";
+    display: block;
+    position: absolute;
+	cursor: pointer;
+	top: 10px;
+	right: 10px;
+	z-index: 0;
+}
+.tribe-bar-search-filter {
+	position: relative;
+}
 .hidetitle {
 	display: none;
 }
