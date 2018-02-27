@@ -8,7 +8,7 @@ jQuery.noConflict();
 
 jQuery(document).ready(function ($) {
     $('.tribe-search-x').click(function(){
-        $('#tribe-bar-search').val('');
+       window.location.href = window.location.protocol+'//'+window.location.hostname+window.location.pathname; 
     });
     function anchor_scroll_capsule(e) {
         if (!e.sudo) {
