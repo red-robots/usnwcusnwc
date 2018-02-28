@@ -22,7 +22,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="e3L8kU2GBIb6wsJkRj2n6v1GDc-ajo6yg6IgX2xYl7w" />
-<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <link rel="stylesheet" type="text/css"  href="<?php echo get_template_directory_uri(); ?>/style.css?v=<?php echo time();?>" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/flexslider.css?v=<?php echo time();?>" />
@@ -36,8 +36,8 @@
 <link rel="stylesheet" href="/franklin-webfonts/franklingothicfs_condensed_macroman/stylesheet.css" type="text/css" charset="utf-8" />
 <link rel="stylesheet" href="/franklin-webfonts/franklingothicfs_condenseditalic_macroman/stylesheet.css" type="text/css" charset="utf-8" />
 <link rel="stylesheet" href="/franklin-webfonts/franklingothicfs_mediumcondensed_macroman/stylesheet.css" type="text/css" charset="utf-8" />
-<link rel="stylesheet" href="http://usnwc.org/wp-content/themes/usnwc/css/addtohomescreen.css">
-<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link rel="stylesheet" href="https://usnwc.org/wp-content/themes/usnwc/css/addtohomescreen.css">
+<!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <script src="<?php echo get_template_directory_uri(); ?>/js/addtohomescreen.min.js?"></script>
 <script src="https://use.fontawesome.com/4945cee666.js"></script>
 <script>
@@ -67,16 +67,16 @@ src="https://www.facebook.com/tr?id=236370623380911&ev=PageView&noscript=1"
 <!-- DO NOT MODIFY -->
 <!-- End Facebook Pixel Code -->
 <!--pm seasonal-->
-<link rel="stylesheet" href="http://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/bootstrap-sortable.css">
-<link rel="stylesheet" href="http://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/bootstrap.css">
-<link rel="stylesheet" href="http://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/peoplematter.css">
+<link rel="stylesheet" href="https://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/bootstrap-sortable.css">
+<link rel="stylesheet" href="https://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/bootstrap.css">
+<link rel="stylesheet" href="https://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/peoplematter.css">
 
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCil33pwgSabW3D8ZmA2-z-5m-EXFj2iLg&libraries=places,geometry"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<?php wp_enqueue_script( 'peoplematter','http://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/peoplematter.js',array('jquery'),'20171030',true);
-wp_enqueue_script( 'bootstrap-sortable','http://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/bootstrap-sortable.js',array('jquery'),'20171030',true);
-wp_enqueue_script( 'lodash','http://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/lodash.underscore.min.js',array('jquery'),'20171030',true);?>
+<?php wp_enqueue_script( 'peoplematter','https://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/peoplematter.js',array('jquery'),'20171030',true);
+wp_enqueue_script( 'bootstrap-sortable','https://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/bootstrap-sortable.js',array('jquery'),'20171030',true);
+wp_enqueue_script( 'lodash','https://usnwc.org/wp-content/themes/usnwc/peoplematter/seasonal/lodash.underscore.min.js',array('jquery'),'20171030',true);?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <!--end pm seasonal-->
 <script type="application/ld+json">
