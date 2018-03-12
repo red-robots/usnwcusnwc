@@ -550,26 +550,35 @@ if(!function_exists('return_100')){
 }
 add_filter( 'jpeg_quality', 'return_100' );
 
-/**
- * Defines alternative titles for month view.
- *
- * @param  string $title
- * @return string
- */
-function filter_events_title_month( $title ) {
-	if ( tribe_is_month() ) {
-		$title = 'Calendar - U.S. National Whitewater Center';
+if(function_exists('tribe_is_month')){
+	/**
+	 * Defines alternative titles for month view.
+	 *
+	 * @param  string $title
+	 * @return string
+	 */
+	function filter_events_title_month( $title ) {
+		if ( tribe_is_month() ) {
+			$title = 'Calendar - U.S. National Whitewater Center';
+		}
+		
+		return $title;
 	}
-	
-	return $title;
-}
-/**
- * Modifes the event <title> element for month view.
- *
- * Users of Yoast's SEO plugin may wish to try replacing the below line with:
- *
- *     add_filter('wpseo_title', 'filter_events_title_month' );
- */
-add_filter( 'tribe_events_title_tag', 'filter_events_title_month' );
+	/**
+	 * Modifes the event <title> element for month view.
+	 *
+	 * Users of Yoast's SEO plugin may wish to try replacing the below line with:
+	 *
+	 *     add_filter('wpseo_title', 'filter_events_title_month' );
+	 */
+	add_filter( 'tribe_events_title_tag', 'filter_events_title_month' );
 
+
+	function bella_add_meta_for_calendar() {
+		if(tribe_is_month()){
+			echo '<meta name="description" content="Calendar for U.S. National Whitewater Center happenings, including activity times and availability, races, festivals, and more.">';
+		}
+	}
+	add_action('wp_head', 'bella_add_meta_for_calendar');
+}
 ?>
