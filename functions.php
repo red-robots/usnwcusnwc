@@ -549,4 +549,27 @@ if(!function_exists('return_100')){
 	}
 }
 add_filter( 'jpeg_quality', 'return_100' );
+
+/**
+ * Defines alternative titles for month view.
+ *
+ * @param  string $title
+ * @return string
+ */
+function filter_events_title_month( $title ) {
+	if ( tribe_is_month() ) {
+		$title = 'Calendar - U.S. National Whitewater Center';
+	}
+	
+	return $title;
+}
+/**
+ * Modifes the event <title> element for month view.
+ *
+ * Users of Yoast's SEO plugin may wish to try replacing the below line with:
+ *
+ *     add_filter('wpseo_title', 'filter_events_title_month' );
+ */
+add_filter( 'tribe_events_title_tag', 'filter_events_title_month' );
+
 ?>
