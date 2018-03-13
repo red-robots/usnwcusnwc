@@ -572,6 +572,7 @@ if(function_exists('tribe_is_month')){
 	 *     add_filter('wpseo_title', 'filter_events_title_month' );
 	 */
 	add_filter( 'tribe_events_title_tag', 'filter_events_title_month' );
+	add_filter('wpseo_title', 'filter_events_title_month' );
 
 
 	function bella_add_meta_for_calendar() {
