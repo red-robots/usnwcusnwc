@@ -4,6 +4,7 @@
  *
  */ 
 global $sidebar;
+global $is_tribe;
 ?>
 
 <?php if(is_single()){
@@ -166,14 +167,14 @@ global $sidebar;
 			<h1>Contact Links</h1>
 		</header>
 		<div class="icon container">
+			<a href="mailto:info@usnwc.org"><div class="icon"><img src="/wp-content/uploads/2015/09/Mail_Icon.png"><header><h2>Email</h2></header></div></a>
+			<a href="tel:+17043913900"><div class="icon"><img src="/wp-content/uploads/2015/09/Phone_Icon.png"><header><h2>Call</h2></header></div></a>
 			<a href="<?php bloginfo(url); ?>/employment"><div class="icon"><img src="/wp-content/uploads/2015/09/Employment_icon.png"><header><h2>Employment</h2></header></div></a>
 			<a href="<?php bloginfo(url); ?>/request-for-donation"><div class="icon"><img src="/wp-content/uploads/2015/09/Donation_request.png"><header><h2>Requests for Donation</h2></header></div></a>
 			<a href="<?php bloginfo('url'); ?>/band-submission-form"><div class="icon"><img src="/wp-content/uploads/2015/09/Band_submission_icon.png"><header><h2>Band Submission</h2></header></div></a>
 			<a href="<?php bloginfo('url'); ?>/feedback/"><div class="icon"><img src="/wp-content/uploads/2015/09/Feedback_Icon.png"><header><h2>Feedback Form</h2></header></div></a>
 			<a href="http://visitor.r20.constantcontact.com/d.jsp?llr=eduqcqdab&p=oi&m=1103272366180&sit=lxqngm4eb&f=37ecc3f5-8224-41c5-88ed-da0951350c92" target="_blank"><div class="icon"><img src="/wp-content/uploads/2015/09/Newsletter_Signup.png"><header><h2>Newsletter Sign-Up</h2></header></div></a>
-			<a href="mailto:info@usnwc.org"><div class="icon"><img src="/wp-content/uploads/2015/09/Mail_Icon.png"><header><h2>Email</h2></header></div></a>
-			<a href="tel:+17043913900"><div class="icon"><img src="/wp-content/uploads/2015/09/Phone_Icon.png"><header><h2>Call</h2></header></div></a>
-		</div>
+			</div>
     </section>
     <section class="sidebar post container social-links">
 		<header>
@@ -189,10 +190,9 @@ global $sidebar;
 			<a href="https://www.youtube.com/user/theusnwc" target="_blank"><div class="icon"><img src="http://usnwc.org/wp-content/uploads/2017/05/YouTube.png" alt="YouTube Icon"><header><h2>YouTube</h2></header></div></a>
 		</div>
 	</section>
-<?php } // End contact ?>  
-
+<?php } // End contact ?>
 <?php  // Hours of Operation important info ?>
-<?php if ( is_page('calendar') ) {
+<?php if ( is_page('calendar') || $is_tribe) {
 	if($sidebar==="top"){?>
 		<section class="post sidebar container rafting-notice">
 			<header>
@@ -217,7 +217,7 @@ global $sidebar;
 			<h2>When are we open?</h2>
 			<ul>
 				<li>Our main gate and trails are open, weather permitting, 365 days a year, from dawn until dusk.</li>
-				<li>The availability of our activities and related operating hours vary with the seasons. Hours of operation can be found on the calendar.</li>
+				<li>The availability of our activities and related operating hours vary with the seasons. Daily hours of operation can be found on the <a href="https://usnwc.org/calendar/">Calendar</a>.</li>
 				<li>Operating hours can be <span style="text-decoration: underline;"><em>added</em></span> or <span style="text-decoration: underline;"><em>extended</em></span> for groups and events. For more information, please call our Group and Event Planners at 704.391.3900 or submit an inquiry on the <a title="Groups" href="http://usnwc.org/visit/groups/">Groups page</a>.</li>
 				<li>All activity availability, schedules and hours are subject to change without notice.</li>
 			</ul>
@@ -228,6 +228,7 @@ global $sidebar;
 			</ul>
 			<h2>Notes about the weather:</h2>
 			<ul>
+				<li>Events and programming operate rain or shine unless otherwise stated by USNWC Staff.</li>
 				<li>In the event of adverse weather, some or all activities may not be available.</li>
 				<li>Please check weather conditions before purchasing any activity pass.</li>
 				<li>Refunds and rain checks are not available.</li>
