@@ -1,3 +1,5 @@
+<?php global $is_tribe;
+if(!isset($is_tribe)) $is_tribe = false;?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -105,7 +107,7 @@ if(is_category()){
 	</nav>
     <a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img class="logo" src="<?php echo get_template_directory_uri()."/images/web_logo.png";?>" alt="U.S. National Whitewater Center Logo"></a>
 </header>
-<?php if(!is_home()) { ?>
+<?php if(!is_home()&&!$is_tribe) { ?>
 <nav class="page breadcrumbs">
 <?php if (is_page()) { 
 	get_breadcrumbs();
