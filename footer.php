@@ -26,7 +26,7 @@
 		<div class="clearfix"></div>
 	</div>
 	<div class="row description">
-		<p><span class="break-mobile">U.S. National Whitewater Center</span><span class="noshow-mobile"> | </span><span class="break-mobile">5000 Whitewater Center Parkway | Charlotte, NC 28214</span><span class="noshow-mobile"> | </span><span class="break-mobile">704.391.3900 | <a href="mailto:info@usnwc.org">info@usnwc.org</a></span></p>
+		<p><span class="break-mobile">U.S. National Whitewater Center</span><span class="noshow-mobile"> | </span><span class="break-mobile">5000 Whitewater Center Parkway | Charlotte, NC 28214</span><span class="noshow-mobile"> | </span><span class="break-mobile"><a href="tel:+17043913900">704.391.3900</a> | <a href="mailto:info@usnwc.org">info@usnwc.org</a></span></p>
 	</div>
 </footer>
 </div><!--end of page container-->

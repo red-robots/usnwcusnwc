@@ -218,7 +218,7 @@ global $is_tribe;
 			<ul>
 				<li>Our main gate and trails are open, weather permitting, 365 days a year, from dawn until dusk.</li>
 				<li>The availability of our activities and related operating hours vary with the seasons. Daily hours of operation can be found on the <a href="https://usnwc.org/calendar/">Calendar</a>.</li>
-				<li>Operating hours can be <span style="text-decoration: underline;"><em>added</em></span> or <span style="text-decoration: underline;"><em>extended</em></span> for groups and events. For more information, please call our Group and Event Planners at 704.391.3900 or submit an inquiry on the <a title="Groups" href="http://usnwc.org/visit/groups/">Groups page</a>.</li>
+				<li>Operating hours can be added or extended for groups and events. For more information, please call our Group and Event Planners at 704.391.3900 or submit an inquiry on the <a title="Groups" href="http://usnwc.org/visit/groups/">Groups page</a>.</li>
 				<li>All activity availability, schedules and hours are subject to change without notice.</li>
 			</ul>
 			<h2>What activities will be open when I visit?</h2>
