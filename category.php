@@ -45,7 +45,7 @@ elseif (is_category('riverjam')||is_category('completed')||is_category('thursday
 	 * The loop cleans up and resets the query after it is called
 	 */
 	 get_template_part('loop','tile');
-	 display_loop_tile(array('cat'=>'5','post_type'=>'post','order'=>'ASC','posts_per_page'=>'-1'));
+	 display_loop_tile(array('cat'=>'5','post_type'=>'post','order'=>'ASC','orderby'=>'menu_order','posts_per_page'=>'-1'));
 	?>
 	<?php get_footer('category'); ?>
 <?php  } ?>

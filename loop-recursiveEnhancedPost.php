@@ -114,7 +114,7 @@ function display_loop_tile_recursive_enhanced_post(){
 	 */
 	if($list_to_display){
 		//set up the loop
-		$query=new WP_Query(array('post__in'=>$list_to_display,'order'=>'ASC','posts_per_page'=>'-1'));
+		$query=new WP_Query(array('post__in'=>$list_to_display,'order'=>'ASC','orderby'=>'menu_order','posts_per_page'=>'-1'));
 		if($query->have_posts()){
 			//create a tile container for all tiles ?>
 			<div class="tile container <?php 
@@ -262,7 +262,7 @@ function display_loop_tile_recursive_enhanced_post(){
    	 */
    	if($list_to_query && $list_to_query_cat && (count($list_to_query)===count($list_to_query_cat))){
 	   	for($i=0;$i<count($list_to_query);$i++){
-   			display_loop_tile_recursive_enhanced_post(array('cat'=>$list_to_query_cat[$i], 'post_type'=>'post', 'order'=>'ASC', 'posts_per_page'=>'-1' ),$list_to_query[$i]);
+   			display_loop_tile_recursive_enhanced_post(array('cat'=>$list_to_query_cat[$i], 'post_type'=>'post', 'order'=>'ASC','orderby'=>'menu_order', 'posts_per_page'=>'-1' ),$list_to_query[$i]);
    		} // end of for loop
    	} //end of list to query
 } //end of function display loop recursive
