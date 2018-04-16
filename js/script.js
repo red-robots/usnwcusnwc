@@ -32,9 +32,11 @@ jQuery(document).ready(function ($) {
                     var header_height = $header.height() ? $header.height() : 0;
                     var scrollTo = $anchor.offset().top - header_height;
                     scrollTo = scrollTo > 0 ? scrollTo : 0;
-                    $('html').animate({
-                        scrollTop: scrollTo,
-                    }, e.data.delay);
+                    setTimeout(function(){
+                        $('html').animate({
+                            scrollTop: scrollTo,
+                        }, 200);
+                    },e.data.delay);
                 }
             }
         });
