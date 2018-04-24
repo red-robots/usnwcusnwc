@@ -13,6 +13,13 @@ Author: Fritz Healy
 article, aside, figure, figcaption, footer, header, main, nav, section, summary {
 	display: block;
 }
+.base .page a[name] {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 0;
+	display: block;
+}
 html {
 	margin-top: 0px !important;
 }
@@ -1209,7 +1216,6 @@ header.post h2, header.post h1{
 	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
 	-o-filter: grayscale(100%);
-	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'https://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
 	transition: top .5s ease, left .5s ease, grayscale 0s;
 	-webkit-transition: top .5s ease, left .5s ease, grayscale 0s;
 	-moz-transition: top .5s ease, left .5s ease, grayscale 0s;
@@ -1219,7 +1225,6 @@ header.post h2, header.post h1{
 	-webkit-filter: grayscale(0%);
 	-moz-filter: grayscale(0%);
 	-o-filter: grayscale(0%);
-	filter: none;
 }
 .icon.container .icon header h2 {
 	text-align: center;

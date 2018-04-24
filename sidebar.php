@@ -67,7 +67,7 @@ global $is_tribe;
 				</tr>
 				<tr>
 					<td><a name="1tented sites"></a>
-						<img class="venue-image" src="http://usnwc.org/wp-content/uploads/2017/02/BigDropTents.jpg" alt="" />
+						<img class="venue-image" src="https://usnwc.org/wp-content/uploads/2017/02/BigDropTents.jpg" alt="" />
 						<h2>Big Drop Tents</h2>
 						<p style="text-align: left;"><!--<a href="http://usnwc.org/tour/hospitality-tents/"><img class="alignleft size-full wp-image-5621" title="USNWC Hospitality Tents | Virtual Tour" src="/wp-content/uploads/2014/11/hosp-tents.jpg" alt="" width="200" height="120" /></a>-->These tented sites are located alongside the most exciting stretch of the world’s largest man-made river. The Big Drop Tents will place your event in the center of the activity, providing an entertaining view for your guests. With up to three tents available, this space can accommodate a wide range of party sizes.</p>
 						<p style="text-align: left;">Capacity: Ceremony – 100 people per tent; Reception – 50 people per tent</p>
@@ -135,7 +135,7 @@ global $is_tribe;
 			<a href="https://www.thenorthface.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/TheNorthFace_logo.png" alt="the north face logo"></div></a>
 			<a href="http://www.cascadedesigns.com/Therm-a-Rest" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/Thermarest.png" alt="thermarest logo"></div></a>
 			<a href="http://www.toadandco.com/" target="_blank"><div class="icon"><img src="/wp-content/uploads/2016/03/ToadCo_Logo.png" alt="toad&amp;co logo"></div></a>
-			<a href="https://www.altrarunning.com/" target="_blank"><div class="icon"><img src="http://usnwc.org/wp-content/uploads/2018/02/Altra_Logo.png" alt="altra logo"></div></a>
+			<a href="https://www.altrarunning.com/" target="_blank"><div class="icon"><img src="https://usnwc.org/wp-content/uploads/2018/02/Altra_Logo.png" alt="altra logo"></div></a>
 		</div>
 	</section>
 <?php }?>
@@ -145,7 +145,7 @@ global $is_tribe;
 		<header>
 			<h1>Map</h1>  
     	</header>
-		<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=5000+Whitewater+Center+Parkway+Charlotte,+NC++28214&amp;sll=37.0625,-95.677068&amp;sspn=42.901912,72.949219&amp;ie=UTF8&amp;hq=5000+Whitewater+Center+Parkway&amp;hnear=Charlotte,+NC+28214&amp;ll=35.272251,-81.005458&amp;spn=0.04651,0.089003&amp;output=embed"></iframe><br />
+		<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=5000+Whitewater+Center+Parkway+Charlotte,+NC++28214&amp;sll=37.0625,-95.677068&amp;sspn=42.901912,72.949219&amp;ie=UTF8&amp;hq=5000+Whitewater+Center+Parkway&amp;hnear=Charlotte,+NC+28214&amp;ll=35.272251,-81.005458&amp;spn=0.04651,0.089003&amp;output=embed"></iframe><br />
         <p>View <a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=5000+Whitewater+Center+Parkway+Charlotte,+NC++28214&amp;sll=37.0625,-95.677068&amp;sspn=42.901912,72.949219&amp;ie=UTF8&amp;hq=5000+Whitewater+Center+Parkway&amp;hnear=Charlotte,+NC+28214&amp;ll=35.272251,-81.005458&amp;spn=0.04651,0.089003" style="color:#0000FF;text-align:right" target="_blank">U.S National Whitewater Center</a> in a larger map</p>
 	</section><!-- widget -->
 <?php } ?> 
@@ -181,13 +181,12 @@ global $is_tribe;
 			<h1>Social Links</h1>
 		</header>
 		<div class="icon container">
-			<a href="http://facebook.com/usnwc" target="_blank"><div class="icon"><img src="http://usnwc.org/wp-content/uploads/2016/10/Facebook.png" alt="Facebook Icon"><header><h2>Facebook</h2></header></div></a>
-			<a href="http://twitter.com/usnwc" target="_blank"><div class="icon"><img src="http://usnwc.org/wp-content/uploads/2016/10/Twiiter.png" alt="Twitter Icon"><header><h2>Twitter</h2></header></div></a>
-			<a href="http://instagram.com/usnwc" target="_blank"><div class="icon"><img src="http://usnwc.org/wp-content/uploads/2016/10/Insta.png" alt="Instagram Icon"><header><h2>Instagram</h2></header></div></a>
-			<a href="https://www.linkedin.com/company/u-s--national-whitewater-center?trk=biz-companies-cym" target="_blank"><div class="icon"><img src="http://usnwc.org/wp-content/uploads/2016/10/LinkedIn.png" alt="LinkedIn Icon"><header><h2>LinkedIn</h2></header></div></a>
-			<a href="https://vimeo.com/usnwc" target="_blank"><div class="icon"><img src="http://usnwc.org/wp-content/uploads/2016/10/Vimeo.png" alt="Vimeo Icon"><header><h2>Vimeo</h2></header></div></a>
-			<a href="http://explore.usnwc.org/" target="_blank"><div class="icon"><img src="http://usnwc.org/wp-content/uploads/2016/10/Explore.png" alt="Explore Icon"><header><h2>Explore</h2></header></div></a>
-			<a href="https://www.youtube.com/user/theusnwc" target="_blank"><div class="icon"><img src="http://usnwc.org/wp-content/uploads/2017/05/YouTube.png" alt="YouTube Icon"><header><h2>YouTube</h2></header></div></a>
+			<a href="https://facebook.com/usnwc" target="_blank"><div class="icon"><img src="https://usnwc.org/wp-content/uploads/2016/10/Facebook.png" alt="Facebook Icon"><header><h2>Facebook</h2></header></div></a>
+			<a href="https://twitter.com/usnwc" target="_blank"><div class="icon"><img src="https://usnwc.org/wp-content/uploads/2016/10/Twiiter.png" alt="Twitter Icon"><header><h2>Twitter</h2></header></div></a>
+			<a href="https://instagram.com/usnwc" target="_blank"><div class="icon"><img src="https://usnwc.org/wp-content/uploads/2016/10/Insta.png" alt="Instagram Icon"><header><h2>Instagram</h2></header></div></a>
+			<a href="https://www.linkedin.com/company/u-s--national-whitewater-center?trk=biz-companies-cym" target="_blank"><div class="icon"><img src="https://usnwc.org/wp-content/uploads/2016/10/LinkedIn.png" alt="LinkedIn Icon"><header><h2>LinkedIn</h2></header></div></a>
+			<a href="https://vimeo.com/usnwc" target="_blank"><div class="icon"><img src="https://usnwc.org/wp-content/uploads/2016/10/Vimeo.png" alt="Vimeo Icon"><header><h2>Vimeo</h2></header></div></a>
+			<a href="https://www.youtube.com/user/theusnwc" target="_blank"><div class="icon"><img src="https://usnwc.org/wp-content/uploads/2017/05/YouTube.png" alt="YouTube Icon"><header><h2>YouTube</h2></header></div></a>
 		</div>
 	</section>
 <?php } // End contact ?>
@@ -218,7 +217,7 @@ global $is_tribe;
 			<ul>
 				<li>Our main gate and trails are open, weather permitting, 365 days a year, from dawn until dusk.</li>
 				<li>The availability of our activities and related operating hours vary with the seasons. Daily hours of operation can be found on the <a href="https://usnwc.org/calendar/">Calendar</a>.</li>
-				<li>Operating hours can be added or extended for groups and events. For more information, please call our Group and Event Planners at 704.391.3900 or submit an inquiry on the <a title="Groups" href="http://usnwc.org/visit/groups/">Groups page</a>.</li>
+				<li>Operating hours can be added or extended for groups and events. For more information, please call our Group and Event Planners at 704.391.3900 or submit an inquiry on the <a title="Groups" href="https://usnwc.org/visit/groups/">Groups page</a>.</li>
 				<li>All activity availability, schedules and hours are subject to change without notice.</li>
 			</ul>
 			<h2>What activities will be open when I visit?</h2>

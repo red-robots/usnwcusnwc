@@ -3,11 +3,6 @@
 	<nav>
 		<?php wp_nav_menu( array( 'theme_location' => 'footer', 'container' => '' ) ); ?>
 	</nav>
-	<div class="row explore"> 
-		<ul>
-   	        <li class="explore"><a href="http://explore.usnwc.org/" target="_blank"><img src="/wp-content/uploads/2016/03/Explore_Logo_grey.png" alt="EXPLORE. Logo"></a></li>               
-		</ul>
-	</div>
 	<div class="row sidebars">
 		<ul>
 			<li><?php dynamic_sidebar( 'activity-schedule' ); ?></li>
@@ -60,7 +55,7 @@
 
 <?php wp_footer(); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js?v=20120423234912"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/script.js?v=20120423234909"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/script.js?v=2012042315454"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/mobilemenu.js?"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/sort.js?"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/toggleSearch.js?"></script>
