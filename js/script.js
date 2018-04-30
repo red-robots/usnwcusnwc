@@ -41,12 +41,14 @@ jQuery(document).ready(function ($) {
             }
         });
     }
-    anchor_scroll_capsule({
-        sudo: true,
-        data: {
-            delay: 500,
-        },
-    });
+    if($('.flexslider').length === 0){
+        anchor_scroll_capsule({
+            sudo: true,
+            data: {
+                delay: 500,
+            },
+        });
+    }
     $('a').click({ delay: 200 }, anchor_scroll_capsule);
     var $slides = $('.flexslider .slides li');
     if ($slides.length > 0) {
@@ -61,14 +63,6 @@ jQuery(document).ready(function ($) {
         $('.flexslider').flexslider({
             animation: "fade",
             smoothHeight: true,
-            start: function (slider) { // Fires when the slider loads the first slide
-                anchor_scroll_capsule({
-                    sudo: true,
-                    data: {
-                        delay: 200,
-                    },
-                });
-            },
             before: function (slider) { // Fires asynchronously with each slider animation
                 var $slides = $(slider.slides),
                     index = slider.animatingTo,
@@ -91,6 +85,12 @@ jQuery(document).ready(function ($) {
                 }
             },
             start: function(slider){
+                anchor_scroll_capsule({
+                    sudo: true,
+                    data: {
+                        delay: 200,
+                    },
+                });
                 var $slides = $(slider.slides);
                 if ($slides.length > 0) {
                     if($slides.eq(0).find('.iframe-wrapper').length > 0){
