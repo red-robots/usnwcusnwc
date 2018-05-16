@@ -93,7 +93,6 @@ html[xmlns] .flexslider .slides {
 .flexslider .slides .image-wrapper img {
     height: auto;
     min-height: 300px;
-    opacity: 0;
 }
 .flexslider .slides .iframe-wrapper img.lazy,
 .flexslider .slides .image-wrapper img.lazy {
@@ -102,7 +101,6 @@ html[xmlns] .flexslider .slides {
 .flexslider .slides .iframe-wrapper {
     width: 100%;
     height: auto;
-    padding: 40% 0 0 0;
     position: relative;
 }
 .flexslider .slides .iframe-wrapper a {
@@ -113,31 +111,39 @@ html[xmlns] .flexslider .slides {
     top: 0;
     left: 0;
 }
-.flexslider .slides .iframe-wrapper iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 5;
+.flexslider .slides .iframe-wrapper iframe, .flexslider .slides .iframe-wrapper video {
+    display: block;
 }
 .flexslider .slides .iframe-wrapper.yes-mobile {
     padding: 0;
 }
-.flexslider .slides .iframe-wrapper.yes-mobile iframe.desktop,
-.flexslider .slides .image-wrapper.yes-mobile img.desktop {
+.flexslider .slides .iframe-wrapper.yes-mobile .desktop,
+.flexslider .slides .image-wrapper.yes-mobile .desktop {
     display: none;
 }
 @media screen and (min-width: 767px) {
+    
+    .flexslider .slides .iframe-wrapper iframe, .flexslider .slides .iframe-wrapper video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+    
+    .flexslider .slides .iframe-wrapper {
+        padding: 40% 0 0 0;
+    }
     .flexslider .slides .iframe-wrapper.yes-mobile {
         padding: 40% 0 0 0;
     }
-    .flexslider .slides .iframe-wrapper.yes-mobile iframe.desktop,
-    .flexslider .slides .image-wrapper.yes-mobile img.desktop {
+    .flexslider .slides .iframe-wrapper.yes-mobile .desktop,
+    .flexslider .slides .image-wrapper.yes-mobile .desktop {
         display: block;
     }
-    .flexslider .slides .iframe-wrapper.yes-mobile img.mobile,
-    .flexslider .slides .image-wrapper.yes-mobile img.mobile {
+    .flexslider .slides .iframe-wrapper.yes-mobile .mobile,
+    .flexslider .slides .image-wrapper.yes-mobile .mobile {
         display: none;
     }
     .flexslider .slides .iframe-wrapper,

@@ -10,18 +10,25 @@
 			<ul class="slides">
 				<?php for ($i = 0; $i< count($flexslider) ; $i++ ):
 				$row = $flexslider[$i]; ?>
-					<?php if ( strcmp( $row['video_or_image'], "video" ) === 0 && $row['video'] ): ?>
+					<?php if ( strcmp( $row['video_or_image'], "video" ) === 0 && ($row['video']||$row['native_video']) ): ?>
 						<li>
-							<div class="iframe-wrapper <?php echo $row['mobile_image']?'yes-mobile':'no-mobile';?>"
-							<?php if($row['mobile_image']):
-								echo 'style="background-image: url('.$row['mobile_image']['url'].');"';
-							endif;?>>
+							<div class="iframe-wrapper <?php echo ($row['mobile_video']||$row['mobile_image'])?'yes-mobile':'no-mobile';?>">
                                 <?php if($row['link']):?>
 								    <a href="<?php echo $row['link']; ?>" <?php if ( $row['target'] ):echo 'target="_blank"'; endif; ?>></a>
 								<?php endif;?>
-									<iframe class="desktop" src="<?php echo $row['video']; ?>" webkitallowfullscreen mozallowfullscreen allowfullscreen="true"
+									<?php if($row['native_video']):?>
+										<video class="desktop" autoPlay loop>
+											<source src="<?php echo $row['native_video'];?>" type="video/mp4">
+										</video>
+									<?php elseif($row['video']):?>
+										<iframe class="desktop" src="<?php echo $row['video']; ?>" webkitallowfullscreen mozallowfullscreen allowfullscreen="true"
 											frameborder="0"></iframe>
-									<?php if($row['mobile_image']):?>
+									<?php endif;
+									if($row['mobile_video']):?>
+										<video class="mobile" autoPlay loop>
+											<source src="<?php echo $row['mobile_video'];?>" type="video/mp4">
+										</video>
+									<?php elseif($row['mobile_image']):?>
 										<img class="mobile <?php if($i!==0) echo 'lazy';?>" <?php if($i!==0) echo 'data-';?>src="<?php echo $row['mobile_image']['url']; ?>"
 												alt="<?php echo $row['mobile_image']['alt']; ?>">
 									<?php endif;?> 
