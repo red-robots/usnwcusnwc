@@ -173,6 +173,7 @@ global $is_tribe;
 			<a href="<?php bloginfo(url); ?>/request-for-donation"><div class="icon"><img src="/wp-content/uploads/2015/09/Donation_request.png"><header><h2>Requests for Donation</h2></header></div></a>
 			<a href="<?php bloginfo('url'); ?>/band-submission-form"><div class="icon"><img src="/wp-content/uploads/2015/09/Band_submission_icon.png"><header><h2>Band Submission</h2></header></div></a>
 			<a href="<?php bloginfo('url'); ?>/feedback/"><div class="icon"><img src="/wp-content/uploads/2015/09/Feedback_Icon.png"><header><h2>Feedback Form</h2></header></div></a>
+			<a href="http://eepurl.com/dppKBv" target="_blank"><div class="icon"><img src="/wp-content/uploads/2015/09/Newsletter_Signup.png"><header><h2>Newsletter Sign-Up</h2></header></div></a>
 			</div>
     </section>
     <section class="sidebar post container social-links">
