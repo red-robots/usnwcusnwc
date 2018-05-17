@@ -59,7 +59,7 @@ jQuery(document).ready(function ($) {
                 $(this).attr('src', src).removeAttr('data-src');
             });
     }
-    $('.flexslider').imagesLoaded(function () {   
+    $(window).load(function () {   
         $('.flexslider').flexslider({
             animation: "fade",
             smoothHeight: true,

@@ -17,7 +17,7 @@
 								    <a href="<?php echo $row['link']; ?>" <?php if ( $row['target'] ):echo 'target="_blank"'; endif; ?>></a>
 								<?php endif;?>
 									<?php if($row['native_video']):?>
-										<video class="desktop" autoPlay loop>
+										<video class="desktop" autoPlay loop muted playsinline>
 											<source src="<?php echo $row['native_video'];?>" type="video/mp4">
 										</video>
 									<?php elseif($row['video']):?>
@@ -25,7 +25,7 @@
 											frameborder="0"></iframe>
 									<?php endif;
 									if($row['mobile_video']):?>
-										<video class="mobile" autoPlay loop>
+										<video class="mobile" autoPlay loop muted playsinline>
 											<source src="<?php echo $row['mobile_video'];?>" type="video/mp4">
 										</video>
 									<?php elseif($row['mobile_image']):?>
