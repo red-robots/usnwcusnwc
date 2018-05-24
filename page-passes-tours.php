@@ -45,11 +45,13 @@ get_header('page'); ?>
 				<?php } ?>
 			<?php } //end of foreach 
 		}//end of if?>
-		<div class="buttons">
-			<div class="button expand-button type-passes">Passes</div><!--.expand-button-->
-			<div class="button expand-button type-passes">Tours</div><!--.expand-button-->
-			<a class="button" href="<?php echo get_permalink();?>">Buy</div><!--.button-->
-		</div><!--.buttons-->
+		<div class="wrapper">
+			<div class="buttons">
+				<div class="button expand-button type-passes">Passes</div><!--.expand-button-->
+				<div class="button expand-button type-tours">Tours</div><!--.expand-button-->
+				<a class="button" href="<?php echo get_permalink();?>">Buy</a><!--.button-->
+			</div><!--.buttons-->
+		</div><!--.wrapper-->
 	</section>
 	<?php $activities = array(
 		'Whitewater'=>'activity_whitewater',
@@ -92,12 +94,13 @@ get_header('page'); ?>
 							<?php $copy = $section['copy'];
 							if($copy) echo $copy;?>
 							
+							<h2>Activity Access</h2>
 							<ul class="top-level-menu">
 								<?php /* loop for activity access section */
 								foreach($activities as $key => $activity){?>
-									<li class="top-level-item">
-										<div class="title">+ <?php echo $key;?></div><!--.title-->
-										<?php if(have_rows($activity,62) ) {?>
+									<?php if($section[$activity]) {?>
+										<li class="top-level-item">
+											<div class="title"><span class="indicator-plus">+</span><span class="indicator-min">-</span> <?php echo $key;?></div><!--.title-->
 											<table class="sub-menu">
 												<thead>
 													<tr>
@@ -107,48 +110,50 @@ get_header('page'); ?>
 													</tr>
 												</thead>
 												<tbody>
-													<?php while(have_rows($activity,62)) { 
-														the_row(); ?>
-														<tr>
-															<?php // fields
-															$name = get_sub_field('name');
-															$difficutly = get_sub_field('difficutly');
-															$qualifiers = get_sub_field('qualifiers');
-															$beg = in_array( 'Easy', $difficutly );
-															$int = in_array( 'Intermediate', $difficutly );
-															$adv = in_array( 'Difficult', $difficutly );?>
+													<?php foreach($section[$activity] as $act) {
+														$show = $act['show'];
+														if(strcmp('no',$show)!==0){?>
+															<tr>
+																<?php // fields
+																$name = $act['name'];
+																$difficulty = $act['difficulty'];
+																$qualifiers = $act['qualifiers'];
+																$beg = in_array( 'Easy', $difficulty );
+																$int = in_array( 'Intermediate', $difficulty );
+																$adv = in_array( 'Difficult', $difficulty );?>
 
-															<td>
-																<?php if($name) echo $name;?>
-															</td>
-															<td>
-																<div class="difficulty">
-																	<div class="diff-icon">
-																		<?php if( $beg ) { ?>
-																			<img class="activity-key" src="<?php bloginfo('template_url'); ?>/images/diff-easy.png" />
-																		<?php } ?>
+																<td>
+																	<?php if($name) echo $name;?>
+																</td>
+																<td>
+																	<div class="difficulty">
+																		<div class="diff-icon">
+																			<?php if( $beg ) { ?>
+																				<img class="activity-key" src="<?php bloginfo('template_url'); ?>/images/diff-easy.png" />
+																			<?php } ?>
+																		</div>
+																		<div class="diff-icon">
+																			<?php if( $int ) { ?>
+																				<img class="activity-key" src="<?php bloginfo('template_url'); ?>/images/diff-med.png" />
+																			<?php } ?>
+																		</div>
+																		<div class="diff-icon">
+																			<?php if( $adv ) { ?>
+																				<img class="activity-key" src="<?php bloginfo('template_url'); ?>/images/diff-advanced.png" />
+																			<?php } ?>
+																		</div>
 																	</div>
-																	<div class="diff-icon">
-																		<?php if( $int ) { ?>
-																			<img class="activity-key" src="<?php bloginfo('template_url'); ?>/images/diff-med.png" />
-																		<?php } ?>
-																	</div>
-																	<div class="diff-icon">
-																		<?php if( $adv ) { ?>
-																			<img class="activity-key" src="<?php bloginfo('template_url'); ?>/images/diff-advanced.png" />
-																		<?php } ?>
-																	</div>
-																</div>
-															</td>
-															<td>
-																<?php if($qualifiers) echo $qualifiers;?>
-															</td>
-														</tr>
-													<?php }//end for while?>
+																</td>
+																<td>
+																	<?php if($qualifiers) echo $qualifiers;?>
+																</td>
+															</tr>
+														<?php } //endif for $show
+													}//end foreach ?>
 												</tbody>
 											</table> 
-										<?php } // end for if?>
-									</li>
+										</li>
+									<?php } // end for if?>
 								<?php } //end for foreach ?>
 							</ul>
 							<?php //section for buttons for each activity

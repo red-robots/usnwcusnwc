@@ -7,6 +7,34 @@ var current_page_width = 0;
 jQuery.noConflict();
 
 jQuery(document).ready(function ($) {
+    $('section.post.container.passes ul.top-level-menu li.top-level-item').click(function(){
+        var $this = $(this);
+        if($this.hasClass('active')){
+            $this.removeClass('active');
+        } else {
+            $this.addClass('active');
+        }
+    });
+    $('section.post.container.passes-tours .buttons .button.expand-button.type-passes').click(function(){
+        var $section = $('section.post.container.passes');
+        if($section.length>0){
+            if($section.hasClass('active')){
+                $section.removeClass('active');
+            } else {
+                $section.addClass('active');
+            }
+        }
+    });
+    $('section.post.container.passes-tours .buttons .button.expand-button.type-tours').click(function(){
+        var $section = $('section.post.container.tours');
+        if($section.length>0){
+            if($section.hasClass('active')){
+                $section.removeClass('active');
+            } else {
+                $section.addClass('active');
+            }
+        }
+    });
     $('.tribe-search-x').click(function(){
        window.location.href = window.location.protocol+'//'+window.location.hostname+window.location.pathname; 
     });

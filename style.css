@@ -1649,6 +1649,116 @@ article.row .copy .passes > span,  article.row .copy .qualifiers.difficulty.cont
 article.row .copy .passes img {
 	width: 90px;
 }
+/*////////////////////////////Passes and tours page/////////////////////////////*/
+section.post.container.passes-tours .buttons, section.post.container.passes .buttons, section.post.container.tours .buttons{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-content: center;
+	align-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+section.post.container.passes,
+section.post.container.tours {
+	display: none;
+}
+section.post.container.passes.active,
+section.post.container.tours.active {
+	display: block;
+}
+section.post.container.passes-tours .buttons .button:first-child, section.post.container.passes .buttons .button:first-child,
+section.post.container.tours .buttons .button:first-child{
+	margin-left: 0;
+}
+
+section.post.container.passes-tours .wrapper {
+	width: 98%;
+}
+section.post.container.passes-tours .buttons .button{
+	background-color: #c10435;
+	color: white;
+	text-transform: uppercase;
+	padding: 10px 50px;
+	font-size: 14pt;
+	margin: 0 18px;
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
+} 
+section.post.container.passes .buttons .button, section.post.container.tours .buttons .button{
+	background-color: #c10435;
+	color: white;
+	text-transform: uppercase;
+	padding: 8px 50px;
+	font-size: 8pt;
+	margin: 0 12px;
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
+}
+section.post.container.passes .buttons, section.post.container.tours .buttons{
+	margin: 20px 0 0 0;
+}
+section.post.container.passes ul.top-level-menu {
+	margin: 0;
+	padding: 0;
+}
+section.post.container.passes ul.top-level-menu li.top-level-item {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+section.post.container.passes ul.top-level-menu li.top-level-item .title {	 
+	cursor: pointer;
+	font-size: 12pt;
+	text-transform: capitalize;
+}
+section.post.container.passes ul.top-level-menu li.top-level-item .title .indicator-min{
+	display: none;
+}
+section.post.container.passes ul.top-level-menu li.top-level-item table.sub-menu{
+	display: none;
+}
+section.post.container.passes ul.top-level-menu li.top-level-item.active .title .indicator-plus{
+	display: none;
+}
+section.post.container.passes ul.top-level-menu li.top-level-item.active .title .indicator-min{
+	display: inline;
+}
+section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu{
+	display: block;
+	padding: 0 0 0 20px;
+}
+section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu thead tr th{
+	color: grey;
+	text-transform: capitalize;
+}
+section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td,
+section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu th {
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	font-size: 10pt;
+	text-transform: capitalize;
+}
+section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td:nth-child(2),
+section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu th:nth-child(2) {
+	padding: 0 40px;
+	margin: 0;
+}
+section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td .diff-icon:first-child,
+section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td .diff-icon:nth-child(2) {
+	margin: 0 10% 0 0;
+}
+section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td .diff-icon .activity-key {
+	max-width: 10px;
+}
+
 /*////////////////////////////Special Events Page///////////////////////////////*/
 section.post.container.event-venues table, section.post.container.recommended-vendors table {
 	width: 90%;
@@ -1975,6 +2085,29 @@ div.trailer .fb-post, div.trailer .fb-post * {
     }
 	/* /ac */
     /* hide slideshow nav on mobile*/
+
+	/*////////////////////////////Passes and tours page/////////////////////////////*/
+	
+	section.post.container.passes-tours .buttons .button:first-child, section.post.container.passes .buttons .button:first-child,
+	section.post.container.tours .buttons .button:first-child{
+		margin-left: 0;
+	}
+	section.post.container.passes-tours .buttons .button{
+		padding: 10px 20px;
+		font-size: 8pt;
+		margin: 0 5px;
+	} 
+	section.post.container.passes .buttons .button, section.post.container.tours .buttons .button{
+		padding: 8px 20px;
+		margin: 0 5px;
+	}
+	section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu{
+		padding: 0;
+	}
+	section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td:nth-child(2),
+	section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu th:nth-child(2) {
+		padding: 0 20px;
+	}
 
 	/*///////////////////// Corporate Groups page ////////////////////////////////*/
 	article.post.groups {
