@@ -1043,6 +1043,12 @@ footer.page div.row.search #mc_embed_signup #mc-embedded-subscribe {
 	font-size: 16px;
 	border: 1px solid lightgrey;
 }
+footer.page div.row.search #mce-error-response {
+	font-weight: 700;
+}
+footer.page div.row.search #mce-success-response {
+	font-weight: 700;
+}
 footer.page div.row.search #gform_wrapper_13 form {
 	margin: 0;
 }
@@ -1982,6 +1988,10 @@ div.trailer .fb-post, div.trailer .fb-post * {
 	footer.page nav {
 		display: none;
 	}
+	footer.page div.row.search {
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
 	footer.page div.row.search #gform_wrapper_13 {
 		width: 100%;
 	}
@@ -2378,7 +2388,6 @@ div.trailer .fb-post, div.trailer .fb-post * {
 		left: 5% !important;
 	} 
 	footer.page div.row.search {
-		width: 98%;
 	 	margin: 2% auto;
 	}
 	footer.page div.row.social ul li {
