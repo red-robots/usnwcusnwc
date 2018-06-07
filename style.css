@@ -1021,6 +1021,7 @@ footer.page div.row.search #gform_wrapper_13 {
 }
 footer.page div.row.search #mc_embed_signup {
 	float: left;
+	min-width: 300px;
 }
 footer.page div.row.search #mc_embed_signup #mce-EMAIL {
 	width: calc(100% - 105px);
