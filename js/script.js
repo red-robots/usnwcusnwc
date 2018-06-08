@@ -17,6 +17,10 @@ jQuery(document).ready(function ($) {
     });
     $('section.post.container.passes-tours .buttons .button.expand-button.type-passes').click(function(){
         var $section = $('section.post.container.passes');
+        var $section_hide = $('section.post.container.tours');
+        if($section_hide.length>0){
+            $section_hide.removeClass('active');
+        }
         if($section.length>0){
             if($section.hasClass('active')){
                 $section.removeClass('active');
@@ -27,6 +31,10 @@ jQuery(document).ready(function ($) {
     });
     $('section.post.container.passes-tours .buttons .button.expand-button.type-tours').click(function(){
         var $section = $('section.post.container.tours');
+        var $section_hide = $('section.post.container.passes');
+        if($section_hide.length>0){
+            $section_hide.removeClass('active');
+        }
         if($section.length>0){
             if($section.hasClass('active')){
                 $section.removeClass('active');

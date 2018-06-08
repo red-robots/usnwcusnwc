@@ -21,15 +21,15 @@
 		<form action="https://usnwc.us17.list-manage.com/subscribe/post?u=621991427ab3dab6fe3576a60&amp;id=3c8fcb087c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 				<div id="mc_embed_signup_scroll">
 			
-				<div id="mce-responses" class="clear">
-					<div class="response" id="mce-error-response" style="display:none"></div>
-					<div class="response" id="mce-success-response" style="display:none"></div>
-				</div>
+				
 				<div class="mc-field-group">
 					<input type="email" value="" name="EMAIL" placeholder="Sign-up for our mailing list..." class="required email" id="mce-EMAIL">
 				</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_621991427ab3dab6fe3576a60_3c8fcb087c" tabindex="-1" value=""></div>
-				<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+				<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div><div id="mce-responses" class="clear">
+					<div class="response" id="mce-error-response" style="display:none"></div>
+					<div class="response" id="mce-success-response" style="display:none"></div>
+				</div>
 				</div>
 		</form>
 		</div>

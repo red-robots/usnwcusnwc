@@ -1019,6 +1019,9 @@ footer.page div.row.search #gform_wrapper_13 {
 	float: left;
 	margin: 0;
 }
+#mc_embed_signup div.mce_inline_error {
+	clear: both;
+}
 footer.page div.row.search #mc_embed_signup {
 	float: left;
 	min-width: 300px;
@@ -1667,8 +1670,15 @@ section.post.container.passes-tours .buttons, section.post.container.passes .but
 	align-content: center;
 	-webkit-align-items: center;
 	align-items: center;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+section.post.container.passes-tours >.wrapper {
+	text-align: left;
+}
+section.post.container.passes-tours >.wrapper >header {
+	border-bottom: 2px solid #e9e9e9;
+	margin: 0 0 20px 0;
 }
 section.post.container.passes,
 section.post.container.tours {
@@ -1678,7 +1688,7 @@ section.post.container.passes.active,
 section.post.container.tours.active {
 	display: block;
 }
-section.post.container.passes-tours .buttons .button:first-child, section.post.container.passes .buttons .button:first-child,
+section.post.container.passes .buttons .button:first-child,
 section.post.container.tours .buttons .button:first-child{
 	margin-left: 0;
 }
@@ -1691,22 +1701,24 @@ section.post.container.passes-tours .buttons .button{
 	color: white;
 	text-transform: uppercase;
 	padding: 10px 50px;
-	font-size: 14pt;
+	font-size: 18px;
 	margin: 0 18px;
 	display: block;
 	text-decoration: none;
 	cursor: pointer;
+	font-weight: 700;
 } 
 section.post.container.passes .buttons .button, section.post.container.tours .buttons .button{
 	background-color: #c10435;
 	color: white;
 	text-transform: uppercase;
 	padding: 8px 50px;
-	font-size: 8pt;
+	font-size: 18px;
 	margin: 0 12px;
 	display: block;
 	text-decoration: none;
 	cursor: pointer;
+	font-weight: 700;
 }
 section.post.container.passes .buttons, section.post.container.tours .buttons{
 	margin: 20px 0 0 0;
@@ -1764,6 +1776,9 @@ section.post.container.passes ul.top-level-menu li.top-level-item.active table.s
 }
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu td .diff-icon .activity-key {
 	max-width: 10px;
+}
+.passes-tours article.row .copy >h2 {
+	font-size: 12pt;
 }
 
 /*////////////////////////////Special Events Page///////////////////////////////*/
@@ -1968,6 +1983,10 @@ div.trailer .fb-post, div.trailer .fb-post * {
 }
 /*///////////////////////////iPad/////////////////////////////////*/
 @media screen and (max-width: 768px)  {
+	
+	section.post.container.passes-tours >.wrapper {
+		text-align: center;
+	}
     .asterisk {
         margin-top: 7px;
     }

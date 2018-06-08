@@ -46,10 +46,12 @@ get_header('page'); ?>
 			<?php } //end of foreach 
 		}//end of if?>
 		<div class="wrapper">
+			<header>
+				<h2>More Information</h2>
+			</header>
 			<div class="buttons">
 				<div class="button expand-button type-passes">Passes</div><!--.expand-button-->
 				<div class="button expand-button type-tours">Tours</div><!--.expand-button-->
-				<a class="button" href="<?php echo get_permalink();?>">Buy</a><!--.button-->
 			</div><!--.buttons-->
 		</div><!--.wrapper-->
 	</section>
@@ -95,6 +97,7 @@ get_header('page'); ?>
 							if($copy) echo $copy;?>
 							
 							<h2>Activity Access</h2>
+							<p style="margin-bottom: 0;">Please click items below for specific activities, difficulties, and qualifiers.</p>
 							<ul class="top-level-menu">
 								<?php /* loop for activity access section */
 								foreach($activities as $key => $activity){?>
@@ -104,7 +107,7 @@ get_header('page'); ?>
 											<table class="sub-menu">
 												<thead>
 													<tr>
-														<th></th>
+														<th>Activities</th>
 														<th>Difficulty</th>
 														<th>Qualifiers</th>
 													</tr>
