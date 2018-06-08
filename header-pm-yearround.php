@@ -15,8 +15,6 @@
 	 */
 	wp_title( '|', true, 'right' );
 
-	// Add the blog name.
-	bloginfo( 'name' );
 ?></title>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
