@@ -1674,11 +1674,11 @@ section.post.container.passes-tours .buttons, section.post.container.passes .but
 	justify-content: center;
 }
 section.post.container.passes-tours >.wrapper {
-	text-align: left;
 }
 section.post.container.passes-tours >.wrapper >header {
 	border-bottom: 2px solid #e9e9e9;
 	margin: 0 0 20px 0;
+	text-align: center;
 }
 section.post.container.passes,
 section.post.container.tours {
@@ -1737,6 +1737,13 @@ section.post.container.passes ul.top-level-menu li.top-level-item .title {
 	font-size: 12pt;
 	text-transform: capitalize;
 }
+section.post.container.passes ul.top-level-menu li.top-level-item .title .indicator-min, 
+section.post.container.passes ul.top-level-menu li.top-level-item .title .indicator-plus {
+	font-size: 16pt;
+	font-weight: 700;
+	width: 15px;
+	display: inline-block;
+}
 section.post.container.passes ul.top-level-menu li.top-level-item .title .indicator-min{
 	display: none;
 }
@@ -1747,7 +1754,7 @@ section.post.container.passes ul.top-level-menu li.top-level-item.active .title 
 	display: none;
 }
 section.post.container.passes ul.top-level-menu li.top-level-item.active .title .indicator-min{
-	display: inline;
+	display: inline-block;
 }
 section.post.container.passes ul.top-level-menu li.top-level-item.active table.sub-menu{
 	display: block;
@@ -1983,7 +1990,10 @@ div.trailer .fb-post, div.trailer .fb-post * {
 }
 /*///////////////////////////iPad/////////////////////////////////*/
 @media screen and (max-width: 768px)  {
-	
+	section.post.container.passes-tours >.wrapper >header {
+		border-top: 2px solid #e9e9e9;
+		padding: 10px;
+	}
 	section.post.container.passes-tours >.wrapper {
 		text-align: center;
 	}

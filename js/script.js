@@ -28,6 +28,9 @@ jQuery(document).ready(function ($) {
                 $section.addClass('active');
             }
         }
+        $('html').animate({
+            scrollTop: $section.offset().top,
+        }, 200);
     });
     $('section.post.container.passes-tours .buttons .button.expand-button.type-tours').click(function(){
         var $section = $('section.post.container.tours');
@@ -42,6 +45,9 @@ jQuery(document).ready(function ($) {
                 $section.addClass('active');
             }
         }
+        $('html').animate({
+            scrollTop: $section.offset().top,
+        }, 200);
     });
     $('.tribe-search-x').click(function(){
        window.location.href = window.location.protocol+'//'+window.location.hostname+window.location.pathname; 
