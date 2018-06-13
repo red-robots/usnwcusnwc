@@ -38,7 +38,8 @@ get_header('page'); ?>
 								$closed = $row['closed'];
 								$start_time = $row['start_time'];
 								$end_time = $row['end_time'];
-								$title = $row['title'];?>
+								$title = $row['title'];
+								$copy = $row['copy'];?>
 								<?php if($title){?>
 									<li class="<?php $now = new DateTime();
 									if(!empty($closed)||
@@ -55,6 +56,12 @@ get_header('page'); ?>
 												echo $end_time;
 											}?></span>
 										<?php }//endif?>
+										<?php if($copy){?>
+											<div class="clearfix"></div>
+											<div class="copy">
+												<?php echo $copy;?>
+											</div><!--.copy-->
+										<?php }?>
 									</li>
 								<?php }//endif?>
 							<?php }//end foreach 
