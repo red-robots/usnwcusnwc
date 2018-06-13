@@ -24,7 +24,7 @@ get_header('page'); ?>
 		</header>
 		<?php $date_notice = get_field("date_notice");
 		if($date_notice){?>
-			<h2><?php echo $date_notice;?></h2>
+			<?php echo $date_notice;?>
 		<?php }//endif?>
 		<ul class="activity-schedule-list">
 			<?php /* loop for activity access section */
@@ -47,7 +47,11 @@ get_header('page'); ?>
 										((new DateTime($end_time))->getTimestamp())<$now->getTimestamp()) 
 										echo "closed";?>">
 										<span class="title"><?php echo $title;?></span>
-										<?php if($start_time||$end_time){?>
+										<?php if(!empty($closed)||
+										((new DateTime($start_time))->getTimestamp())>$now->getTimestamp()||
+										((new DateTime($end_time))->getTimestamp())<$now->getTimestamp()){?>
+											<span class="time">Closed</span>
+										<?php }  elseif($start_time||$end_time){?>
 											<span class="time"><?php if($start_time){
 												echo $start_time;
 											}
@@ -55,7 +59,7 @@ get_header('page'); ?>
 											if($end_time){
 												echo $end_time;
 											}?></span>
-										<?php }//endif?>
+										<?php } //endif?>
 										<?php if($copy){?>
 											<div class="clearfix"></div>
 											<div class="copy">
